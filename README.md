@@ -6,6 +6,9 @@ Billy-
 Lola-
 Valerie-
 Michael- hey
+
 # Night at the Museum
+
 # Midterm
+
 # Fridays
