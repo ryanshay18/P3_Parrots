@@ -1,5 +1,7 @@
 # BeakersTorts
-What we did:
+# Project Board Link:
+https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+# What we did:
 Billy-
 Lola-
 Valerie-
