@@ -8,6 +8,14 @@ This project is meant to give the user a series of questions that will then reve
 This Project Board contains the progress made by the scrum members to complete the big ticket item/idea and the assignments the srum master assigns his scrum members.
 https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 
+# Project Details
+- Questions asked:
+- Based off of information collected from user input, our database would perform a query and select the colleges that make the most sense for the user. These would   then be displayed on the page and the user would have the option to explore the college link and read more about each feature.
+- Our database would be a local created from SQLAlchemy and data would be entered from a scraping program we are hoping to write
+
+## Backup Project
+If this project presents to be too difficult within the first couple of weeks and the team cannot figure out how to work the scraping together with the databas, we have approval from Mr. John to switch our project. Our second idea is to have a movie database with a Netflix inspired query. Users would be able to search movies by genre, year, actors, producers, names, etc. There would also be an option to add movies to the database, provided all the information is present in the Create feature. If we do end up doing this project, we will create a more elaborate project plan
+
 # Fridays
 Every Friday the scrum group will meet up for atleast 5 minutes to discuss plans for the future and any possible assignments assigned to each scrum member over the weekend.
 # Midterm
