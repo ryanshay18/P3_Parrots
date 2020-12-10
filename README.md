@@ -19,6 +19,9 @@ To meet and exceed College Board requirements, this project will include a SQLAl
 
 # Assignments
 Billy- SQLAlchemy                                                                                                                                                      
+
 Lola - UI/ Rasberry Pi 
+
 Michael - UI
+
 Valerie- scraping
