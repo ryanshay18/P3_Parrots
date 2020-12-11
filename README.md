@@ -23,7 +23,7 @@ Every Friday the scrum group will meet up for atleast 5 minutes to discuss plans
 # Midterm
 By the Midterm, what should be finished is the "scraping data" part of our project and the base of our flask website which has the use of SQLAlchemy in it.
 # Night at the Museum
-By the time Night at the Museum comes around, The project should be nearly finished and ready to run lff the rasberry pi.
+By the time Night at the Museum comes around, The project should be nearly finished and ready to run off the rasberry pi.
 # College Board
 To meet and exceed College Board requirements, this project will include a SQLAlchemy Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
 
