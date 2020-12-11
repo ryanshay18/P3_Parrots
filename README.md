@@ -30,6 +30,10 @@ Home Page -
 ![College UI - Home](https://user-images.githubusercontent.com/43625360/101936740-c9fe8a80-3b95-11eb-9d03-5811107ee2d9.png)
 
 Quiz Page - 
+![College UI - Quiz](https://user-images.githubusercontent.com/43625360/101937925-607f7b80-3b97-11eb-92f6-e55bb16eeaf4.png)
+
+About Page - 
+
 
 
 
