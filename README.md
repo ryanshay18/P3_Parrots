@@ -1,6 +1,15 @@
 # BeakersTorts
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren 
 
+# assignments
+Billy- UI/ SQLAlchemy
+
+Valerie- UI/ Scraping
+
+Lola- UI/ rasbery pi deployment
+
+Michael - UI
+
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
 
