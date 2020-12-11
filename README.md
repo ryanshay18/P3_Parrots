@@ -24,6 +24,15 @@ https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 
 ![Project Plan 1](https://user-images.githubusercontent.com/43625360/101848081-7e9e9a80-3b09-11eb-915c-4bfbc809652c.png)
 
+# UI Ideas for Project
+
+Home Page - 
+![College UI - Home](https://user-images.githubusercontent.com/43625360/101936740-c9fe8a80-3b95-11eb-9d03-5811107ee2d9.png)
+
+Quiz Page - 
+
+
+
 ## Backup Project
 If this project presents to be too difficult within the first couple of weeks and the team cannot figure out how to work the scraping together with the databas, we have approval from Mr. John to switch our project. Our second idea is to have a movie database with a Netflix inspired query. Users would be able to search movies by genre, year, actors, producers, names, etc. There would also be an option to add movies to the database, provided all the information is present in the Create feature. If we do end up doing this project, we will create a more elaborate project plan
 
