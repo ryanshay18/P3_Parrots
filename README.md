@@ -9,7 +9,7 @@ This Project Board contains the progress made by the scrum members to complete t
 https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 
 # Project Details
-- Questions asked: LOLA DO THIS
+- Questions asked: LOLA DO THIS... its billy and I don't think lola sees thiss so somone do it NOW!
 - Based off of information collected from user input, our database would perform a query and select the colleges that make the most sense for the user. These would   then be displayed on the page and the user would have the option to explore the college link and read more about each feature.
 - Our database would be a local created from SQLAlchemy and data would be entered from a scraping program we are hoping to write
 
