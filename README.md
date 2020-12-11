@@ -10,7 +10,7 @@ https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 
 # Project Details
 - Questions asked: User will be asked questions that help us gear them towards which college they would prefer.
-Ex. What is your ideal major?
+- Ex. What is your ideal major?
     What kind of careers most interest you?
     Where is your ideal location for college?
     Are you more inclined towards academics or sports?
