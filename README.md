@@ -50,3 +50,6 @@ By the time Night at the Museum comes around, The project should be nearly finis
 # College Board
 To meet and exceed College Board requirements, this project will include a SQLAlchemy Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
 
+College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
+
+
