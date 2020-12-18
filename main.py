@@ -1,5 +1,6 @@
 # import requests
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 
@@ -16,6 +17,30 @@ def quiz():
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+
+@app.route('/aboutbilly')
+def aboutbilly():
+    return render_template("aboutbilly.html")
+
+
+@app.route('/aboutlola')
+def aboutlola():
+    return render_template("aboutlola.html")
+
+
+@app.route('/aboutmichael')
+def aboutmichael():
+    return render_template("aboutmichael.html")
+
+
+@app.route('/aboutvalerie')
+def aboutvalerie():
+    return render_template("aboutvalerie.html")
+
+
+
+
 
 """
 @app.route('/api/')
