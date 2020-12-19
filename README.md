@@ -13,6 +13,7 @@ https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - Ex. What is your ideal major?
     What kind of careers most interest you?
     Where is your ideal location for college?
+  
     Are you more inclined towards academics or sports?
     Do you have an interest in Greek Life?
     What is your weighted GPA?
