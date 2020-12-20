@@ -19,22 +19,22 @@ def about():
     return render_template("about.html")
 
 
-@app.route('/aboutbilly')
+@app.route('/billy')
 def aboutbilly():
     return render_template("aboutbilly.html")
 
 
-@app.route('/aboutlola')
+@app.route('/lola')
 def aboutlola():
     return render_template("aboutlola.html")
 
 
-@app.route('/aboutmichael')
+@app.route('/michael')
 def aboutmichael():
     return render_template("aboutmichael.html")
 
 
-@app.route('/aboutvalerie')
+@app.route('/valerie')
 def aboutvalerie():
     return render_template("aboutvalerie.html")
 
