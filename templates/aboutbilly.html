@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Billy</title>
-</head>
-<body>
-<h1 class="red"> Hey I'm Billy and this is my "about me" page! </h1>
-<h2>My goals and role in this project:</h2>
-    <h3>Start working on database for college picker<h3>
-        <h4> Work on dropdown on ABOUT US page that lets you click which team member to look at<h4>
+{% extends "navbar.html" %}
 
-
-</body>
-</html>
+{% block link1 %}
+    <h1>About Billy</h1>
+    <p>Hey I'm Billy and this is my "about me" page!</p>
+    <h2>My goals and role in this project:</h2>
+    <li>Start working on database for college picker</li>
+    <li>Work on dropdown on ABOUT US page that lets you click which team member to look at</li>
+{% endblock %}
