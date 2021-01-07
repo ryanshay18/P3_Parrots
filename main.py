@@ -19,6 +19,11 @@ def about():
     return render_template("about.html")
 
 
+@app.route('/colleges')
+def colleges():
+    return render_template("colleges.html")
+
+
 @app.route('/billy')
 def about_billy():
     return render_template("aboutbilly.html")
