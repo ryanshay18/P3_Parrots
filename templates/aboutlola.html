@@ -1,21 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Lola</title>
-    <p>Hi! It's Lola! This is my second Trimester in APSCP, and this trimester one of my biggest goals is to learn how to develop a database and take on a leadership role in our project. Here are some small things about me and my role that I will be updating throughout my progress during this project.</p>
-</head>
-<body>
-<h1> Some things about me:</h1>
-<h2> I love my family and playing soccer:</h2>
-<iframe src="https://drive.google.com/file/d/1ovwJPtJtGNXywbU1Rx1srasUvg1KvdFY/preview" width="340" height="280"></iframe>
-<iframe src="https://drive.google.com/file/d/1x8T1glK2Frhf-u9K_1FJwpuINdI4oQif/preview" width="240" height="280"></iframe>
-<h2>My goals and role in this project:</h2>
-<h3>Create and manage ABOUT US pages</h3>
-<h3>Make backgrounds for pages and navigation buttons that allow you to go back to the home/main page<h3>
-    <h3>Start working on database for college picker<h3>
-   <h3> Work on dropdown on ABOUT US page that lets you click which team member to look at<h3>
-    <h3> Work on aesthetics of home page and add logo + background<h3>
+{% extends "navbar.html" %}
 
-</body>
-</html>
+{% block link1 %}
+
+<h1>About Lola</h1>
+<p>Hi! It's Lola! This is my second Trimester in APSCP, and this trimester one of my biggest goals is to
+    learn how to develop a database and take on a leadership role in our project. Here are some small things
+    about me and my role that I will be updating throughout my progress during this project.</p>
+<style>
+    body{
+background-image: url('cool-background.jpg');
+background-repeat: no-repeat;
+animation: bg-animation 10s infinite;
+
+}
+
+@-webkit-keyframes bg-animation {
+
+}
+
+@keyframes bg-animation {
+0% {
+background-color: #5f9ea0;
+}
+25% {
+background-color: #fff8dc;
+}
+75% {
+background-color: #e9967a;
+}
+100% {
+background-color: #e6e6fa;
+}
+</style>
+<h2> Some things about me:</h2>
+<li> I love my family and playing soccer:</li>
+<iframe src="https://drive.google.com/file/d/1ovwJPtJtGNXywbU1Rx1srasUvg1KvdFY/preview" width="340"
+        height="280"></iframe>
+<iframe src="https://drive.google.com/file/d/1x8T1glK2Frhf-u9K_1FJwpuINdI4oQif/preview" width="240"
+        height="280"></iframe>
+<h3>My goals and role in this project:</h3>
+<li>Create and manage ABOUT US pages</li>
+<li>Make backgrounds for pages and navigation buttons that allow you to go back to the home/main page</li>
+<li>Start working on database for college picker</li>
+<li> Work on dropdown on ABOUT US page that lets you click which team member to look at</li>
+<li> Work on aesthetics of home page and add logo + background</li>
+
+{% endblock %}

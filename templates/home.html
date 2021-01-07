@@ -2,7 +2,34 @@
 
 {% block link1 %}
 
-<h3> Home Page</h3>
-<h4> Welcome to the College Database Site!</h4>
+    <h3> Home Page</h3>
+    <h4> Welcome to the College Database Site!</h4>
+<style>
+    body{
+    background-image: url('cool-background.jpg');
+    background-repeat: no-repeat;
+    animation: bg-animation 10s infinite;
 
+    }
+
+    @-webkit-keyframes bg-animation {
+
+    }
+
+    @keyframes bg-animation {
+    0% {
+        background-color: #f57e42;
+    }
+    25% {
+        background-color: #1f5d9c;
+    }
+    75% {
+        background-color: #60d66c;
+    }
+    100% {
+        background-color: #EC9F20;
+    }
+
+    }
+</style>
 {% endblock %}
