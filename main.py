@@ -20,26 +20,23 @@ def about():
 
 
 @app.route('/billy')
-def aboutbilly():
+def about_billy():
     return render_template("aboutbilly.html")
 
 
 @app.route('/lola')
-def aboutlola():
+def about_lola():
     return render_template("aboutlola.html")
 
 
 @app.route('/michael')
-def aboutmichael():
+def about_michael():
     return render_template("aboutmichael.html")
 
 
 @app.route('/valerie')
-def aboutvalerie():
+def about_valerie():
     return render_template("aboutvalerie.html")
-
-
-
 
 
 """
