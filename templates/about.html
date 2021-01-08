@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ABOUT US</title>
-</head>
-<body>
-<h1 style="text-align: left; color:blue; font-size 40px" >Hi! This website was created by Valerie, Lola, Michael, and William. </h1>
-<h2 style="text-align: center; color:black; font-size 35px" >Down below you will find:</h2>
-<li style="text-align: center; color:blue; font-size 20px" >Some fun facts and pictures about us</li>
-<li style="text-align: center; color:blue; font-size 20px" >Our roles and goals in the project</li>
+{% extends "navbar.html" %}
+
+{% block link1 %}
+<h1 style="text-align: center; font-family: times-new-roman; color:blue; font-size 40px">Hi! This website was created by Valerie,
+    Lola, Michael, and William. </h1>
+<h2 style="text-align: center; font-family: times-new-roman; color:black; font-size 35px">Down below you will find:</h2>
+<li style="text-align: center; font-family: times-new-roman; color:blue; font-size 20px">Some fun facts and pictures about us</li>
+<li style="text-align: center; font-family: times-new-roman; color:blue; font-size 20px">Our roles and goals in the project</li>
+
+<div class="dropdown" style="padding: 15;">
+    <button onclick="myFunction()" class="dropbtn" style="text-align: center; padding-left: 15; font-family: times-new-roman; color:red; font-size: 40px">About the
+        Creators
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="/billy" style="text-align: center; font-size:30px"> Billy</a>
+        <a href="/lola" style="text-align: center; font-size:30px"> Lola</a>
+        <a href="/valerie" style="text-align: center; font-size:30px"> Valerie</a>
+        <a href="/michael" style="text-align: center; font-size:30px"> Michael</a>
+
+
+    </div>
+</div>
+
 <style>
         body{
 background-image: url('cool-background.jpg');
@@ -34,18 +46,7 @@ background-color: #e6e6fa;
 100% {
 background-color: #e6e6fa;
 }
+
 </style>
-<div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn" style="text-align: center; color:red; font-size: 40px" >About the Creators</button>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="/billy" style ="text-align: center; font-size:30px"> Billy</a>
-        <a href="/lola" style ="text-align: center; font-size:30px"> Lola</a>
-        <a href="/valerie" style ="text-align: center; font-size:30px"> Valerie</a>
-        <a href="/michael" style ="text-align: center; font-size:30px"> Michael</a>
 
-
-    </div>
-</div>
-
-</body>
-</html>
+{% endblock %}
