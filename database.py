@@ -1,6 +1,5 @@
 import mysql.connector
 from mysql.connector import Error, connection
-import pandas as pd
 
 
 # A function to connect to our MySQL Server
