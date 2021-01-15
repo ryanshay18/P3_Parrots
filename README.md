@@ -1,5 +1,11 @@
 # BeakersTorts
-Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren 
+Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
+
+# Goals achieved
+- multiple choice questions created on the questions page
+- Feed back page created; user is able to input their thoughts on our page
+- api databases collected and ready to connect to the database
+- deployment is ready
 
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
