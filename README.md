@@ -4,10 +4,13 @@ Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 # Goals achieved
 Scrum Board has the official Tickets and is names of people assigned to each ticket.
 Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- multiple choice questions created on the questions page
+- multiple choice questions created on the questions page.                          
 - Feed back page created; user is able to input their thoughts on our page
 - api databases collected and ready to connect to the database
 - deployment is ready
+# How to find our big tickets on our website
+-Click on navbar on top left of website, and it will give you a quiz option and feedback option.
+These options will hold our UI ticket item along with our carousol on the Home page
 
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
