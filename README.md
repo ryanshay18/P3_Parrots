@@ -4,7 +4,7 @@ Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 # Scrum master ticket grading
 Evidence and links to code are in the project board 
 - Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
-- Michael 19/20- deployed the website!
+- Michael 19/20- Worked on deploying the website. 
 - Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
 - Billy 17/20- Worked on database and create.py to define
 # Goals achieved
@@ -13,7 +13,6 @@ Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - multiple choice questions created on the questions page.                          
 - Feed back page created; user is able to input their thoughts on our page
 - api databases collected and ready to connect to the database
-- deployment is ready
 # How to find our big tickets on our website
 -Click on navbar on top left of website, and it will give you a quiz option and feedback option.
 These options will hold our UI ticket item along with our carousol on the Home page
