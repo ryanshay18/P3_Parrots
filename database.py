@@ -70,8 +70,8 @@ def execute_query(connection, query):
         print("Error: '{err}'")
 
 
-create_teacher_table = """
-CREATE TABLE teacher (
+create_college_table = """
+CREATE TABLE College (
   teacher_id INT PRIMARY KEY,
   first_name VARCHAR(40) NOT NULL,
   last_name VARCHAR(40) NOT NULL,
