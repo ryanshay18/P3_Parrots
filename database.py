@@ -1,5 +1,5 @@
 import mysql.connector
-from mysql.connector import Error, connection
+from mysql.connector import Error
 
 
 # A function to connect to our MySQL Server
@@ -68,3 +68,20 @@ def execute_query(connection, query):
         print("Query successful")
     except Error as err:
         print("Error: '{err}'")
+
+
+create_teacher_table = """
+CREATE TABLE teacher (
+  teacher_id INT PRIMARY KEY,
+  first_name VARCHAR(40) NOT NULL,
+  last_name VARCHAR(40) NOT NULL,
+  language_1 VARCHAR(3) NOT NULL,
+  language_2 VARCHAR(3),
+  dob DATE,
+  tax_id INT UNIQUE,
+  phone_no VARCHAR(20)
+  );
+ """
+
+connection = create_db_connection("localhost", "root", pw, db)  # Connect to the Database
+execute_query(connection, create_teacher_table)  # Execute our defined query
