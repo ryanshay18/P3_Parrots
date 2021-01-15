@@ -1,6 +1,10 @@
 # BeakersTorts
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
+# Our Big ticket website video- 
+since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
+https://youtu.be/LaLQzCo173c
+
 # Scrum master ticket grading
 Evidence and links to code are in the project board 
 - Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
@@ -13,10 +17,6 @@ Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - multiple choice questions created on the questions page.                          
 - Feed back page created; user is able to input their thoughts on our page
 - api databases collected and ready to connect to the database
-# How to find our big tickets on our website
--Click on navbar on top left of website, and it will give you a quiz option and feedback option.
-These options will hold our UI ticket item along with our carousol on the Home page
-
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
 
