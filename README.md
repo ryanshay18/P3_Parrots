@@ -2,6 +2,8 @@
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
 # Goals achieved
+Scrum Board has the official Tickets and is names of people assigned to each ticket.
+Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - multiple choice questions created on the questions page
 - Feed back page created; user is able to input their thoughts on our page
 - api databases collected and ready to connect to the database
