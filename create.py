@@ -25,7 +25,7 @@ class Users(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
     gpa = db.Column(db.String(255), unique=False, nullable=False)
-    state = db.Column(db.String(60), unique=True, key='email')
+    state = db.Column(db.String(60), unique=True, key='state')
 
 
 if __name__ == "__main__":

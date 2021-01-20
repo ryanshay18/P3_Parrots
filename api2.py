@@ -12,3 +12,9 @@ headers = {
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 print(response.text)
+list = response.json()
+
+for item in list:
+    print(item["name"], item["countryCode"])
+
+
