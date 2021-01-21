@@ -25,7 +25,7 @@ class Users(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
     gpa = db.Column(db.String(255), unique=False, nullable=False)
-    state = db.Column(db.String(60), unique=True, key='state')
+    country = db.Column(db.String(60), unique=True, key='countryCode')
 
 
 if __name__ == "__main__":
@@ -33,10 +33,10 @@ if __name__ == "__main__":
     db.create_all()
 
     try:
-        u1 = Users(name='Thomas Edison', gpa='Toby', state='tedison@example.com')
-        u2 = Users(name='Nicholas Tesla', gpa='Niko', state='ntesla@example.com')
-        u3 = Users(name='Alexander Graham Bell', gpa='Lex', state='agbell@example.com')
-        u4 = Users(name='Eli Whitney', gpa='Whit', state='eliw@example.com')
+        u1 = Users(name='Thomas Edison', gpa='Toby', countryCode='tedison@example.com')
+        u2 = Users(name='Nicholas Tesla', gpa='Niko', countryCode='ntesla@example.com')
+        u3 = Users(name='Alexander Graham Bell', gpa='Lex', countryCode='agbell@example.com')
+        u4 = Users(name='Eli Whitney', gpa='Whit', countryCode='eliw@example.com')
         session.add_all([u1, u2, u3, u4])
         session.commit()
 
@@ -49,4 +49,4 @@ if __name__ == "__main__":
         print(row.user_id)
         print(row.name)
         print(row.gpa)
-        print(row.state)
+        print(row.countryCode)
