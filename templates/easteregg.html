@@ -1,0 +1,33 @@
+{% extends "navbar.html" %}
+
+{% block link1 %}
+<h1>Easter Egg page</h1>
+
+
+<style>
+    body{
+background-image: url('cool-background.jpg');
+background-repeat: no-repeat;
+animation: bg-animation 10s infinite;
+
+}
+
+@-webkit-keyframes bg-animation {
+
+}
+
+@keyframes bg-animation {
+0% {
+background-color: #b22222;
+}
+25% {
+background-color: #ff4500;
+}
+75% {
+background-color: #ffff00;
+}
+100% {
+background-color: #9acd32;
+}
+</style>
+{% endblock %}

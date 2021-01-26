@@ -24,7 +24,7 @@ session = Session(bind=engine)
 class Users(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
-    gpa = db.Column(db.String(255), unique=False, nullable=False)
+    country = db.Column(db.String(255), unique=False, nullable=False)
 
 
 if __name__ == "__main__":
@@ -32,8 +32,14 @@ if __name__ == "__main__":
     db.create_all()
 
     try:
-        u1 = Users(name='Thomas Edison', gpa='Toby')
-        session.add_all([u1])
+        u1 = Users(name='William', country='USA')
+        u2 = Users(name='Valerie', country='Russia')
+        u3 = Users(name='Lola', country='Russia')
+        u4 = Users(name='Michael', country='White')
+        u5 = Users(name='Beakers', country='Torts')
+        u6 = Users(name='John Mortensen', country='DNHS')
+
+        session.add_all([u1, u2, u3, u4, u5, u6])
         session.commit()
 
     except:
@@ -44,4 +50,4 @@ if __name__ == "__main__":
     for row in list:
         print(row.user_id)
         print(row.name)
-        print(row.gpa)
+        print(row.country)

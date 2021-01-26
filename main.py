@@ -9,6 +9,11 @@ def home():
     return render_template("home.html")
 
 
+@app.route('/easteregg')
+def easteregg():
+    return render_template("easteregg.html")
+
+
 @app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
