@@ -1,3 +1,4 @@
+import requests
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from sqlalchemy import create_engine
@@ -31,16 +32,27 @@ if __name__ == "__main__":
     """create each table"""
     db.create_all()
 
-    try:
-        u1 = Users(name='William', country='USA')
-        u2 = Users(name='Valerie', country='Russia')
-        u3 = Users(name='Lola', country='Russia')
-        u4 = Users(name='Michael', country='White')
-        u5 = Users(name='Beakers', country='Torts')
-        u6 = Users(name='John Mortensen', country='DNHS')
+    url = "https://universities-and-colleges.p.rapidapi.com/universities"
 
-        session.add_all([u1, u2, u3, u4, u5, u6])
+    querystring = {"page": "5", "includeUniversityDetails": "true", "countryCode": "US", "limit": "50"}
+
+    headers = {
+        'x-RapidAPI-Key': "7060fafea1mshc1031ccdb460c56p1e6e83jsnc95eba373c88",
+        'x-RapidAPI-Host': "universities-and-colleges.p.rapidapi.com"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    print(response.text)
+    list = response.json()
+
+    try:
+        for item in list:
+            #          print(item["name"], item["countryCode"])
+            u1 = Users(name=item["name"], country=item["countryCode"])
+            session.add_all([u1])
         session.commit()
+
 
     except:
         print("Records exist")
