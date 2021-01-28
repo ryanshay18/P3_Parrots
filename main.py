@@ -52,9 +52,9 @@ def about_valerie():
 def feedback():
     return render_template("feedback.html")
 
-@app.route('/Responses/')
-def Responses():
-    return render_template("Responses.html")
+@app.route('/responses/')
+def responses():
+    return render_template("responses.html")
 
 
 """
