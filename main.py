@@ -48,9 +48,11 @@ def about_michael():
 def about_valerie():
     return render_template("aboutvalerie.html")
 
+
 @app.route('/feedback')
 def feedback():
     return render_template("feedback.html")
+
 
 @app.route('/responses/')
 def responses():
