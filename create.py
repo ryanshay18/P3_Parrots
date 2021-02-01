@@ -1,9 +1,8 @@
-import requests
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-
+import requests
 app = Flask(__name__)
 
 """ database locations """
@@ -32,6 +31,7 @@ if __name__ == "__main__":
     """create each table"""
     db.create_all()
 
+    # api2 code implemented into database table
     url = "https://universities-and-colleges.p.rapidapi.com/universities"
 
     querystring = {"page": "5", "includeUniversityDetails": "true", "countryCode": "US", "limit": "50"}
@@ -63,3 +63,4 @@ if __name__ == "__main__":
         print(row.user_id)
         print(row.name)
         print(row.country)
+
