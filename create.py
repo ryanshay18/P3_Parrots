@@ -25,6 +25,10 @@ class Users(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
     country = db.Column(db.String(255), unique=False, nullable=False)
+    state = db.Column(db.String(255), unique=False, nullable=False)
+    address = db.Column(db.String(255), unique=False, nullable=False)
+    zip = db.Column(db.String(255), unique=False, nullable=False)
+    website = db.Column(db.String(255), unique=False, nullable=False)
 
 
 if __name__ == "__main__":
@@ -34,7 +38,7 @@ if __name__ == "__main__":
     # api2 code implemented into database table
     url = "https://universities-and-colleges.p.rapidapi.com/universities"
 
-    querystring = {"page": "5", "includeUniversityDetails": "true", "countryCode": "US", "limit": "50"}
+    querystring = {"page": "1", "includeUniversityDetails": "true", "countryCode": "US", "limit": "50", "state": "true", "address": "true", "website": "true", "zip": "true"}
 
     headers = {
         'x-RapidAPI-Key': "7060fafea1mshc1031ccdb460c56p1e6e83jsnc95eba373c88",
@@ -49,7 +53,7 @@ if __name__ == "__main__":
     try:
         for item in list:
             #          print(item["name"], item["countryCode"])
-            u1 = Users(name=item["name"], country=item["countryCode"])
+            u1 = Users(name=item["name"], country=item["countryCode"], state=item["state"], address=item["address"], zip=item["zip"], website=item["website"])
             session.add_all([u1])
         session.commit()
 
@@ -62,5 +66,9 @@ if __name__ == "__main__":
     for row in list:
         print(row.user_id)
         print(row.name)
-        print(row.country)
+        print("country:", row.country)
+        print("state:", row.state)
+        print("address:", row.address)
+        print("zip code:", row.zip)
+        print("website:", row.website)
 
