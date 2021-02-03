@@ -9,7 +9,7 @@ def home():
     return render_template("home.html")
 
 
-@app.route('/easteregg')
+@app.route('/easteregg/')
 def easteregg():
     return render_template("easteregg.html")
 
