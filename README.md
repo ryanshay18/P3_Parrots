@@ -65,7 +65,12 @@ If this project presents to be too difficult within the first couple of weeks an
 # Fridays
 Every Friday the scrum group will meet up for atleast 5 minutes to discuss plans for the future and any possible assignments assigned to each scrum member over the weekend.
 # Midterm
-By the Midterm, what should be finished is the "scraping data" part of our project and the base of our flask website which has the use of SQLAlchemy in it.
+Midterm is finished. So far what is done is:
+- the creation of the SQL Database
+- the api was found and connected to the database
+- feedback page in progress (front end finished)
+- quiz page in progress (nearly finished)
+- Web page running off of a rasberry pi
 # Night at the Museum
 By the time Night at the Museum comes around, The project should be nearly finished and ready to run off the rasberry pi.
 # College Board
