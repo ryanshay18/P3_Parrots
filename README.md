@@ -1,6 +1,10 @@
 # BeakersTorts
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
+# Ticket/Easter Egg Link
+-Where you'll find ticket and easter egg info:
+-https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+
 # Our Big ticket website video- 
 since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
 https://youtu.be/LaLQzCo173c
