@@ -2,10 +2,9 @@
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
 # Ticket/Easter Egg (Info/Link)
--Where you'll find ticket and easter egg info:
--https://github.com/valeriemiliteeva/BeakersTorts/projects/1
--What You'll Find in the link:
--Code/indivisual contribution and discrimption of the ticket
+-Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- What You'll Find in the link:
+- Code/indivisual contribution and discrimption of the ticket
 - Ticket(1)= Database/Query
 - Ticket(2)= UI/Mc Page 
 - Ticket(3)= Easter Egg
