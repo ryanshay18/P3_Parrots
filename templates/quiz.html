@@ -1,223 +1,358 @@
 {% extends "navbar.html" %}
 
 {% block link1 %}
-    <h1>Answer the following questions as best as possible: </h1>
-<div style='transform: scale(0.65); position: relative; top: -100px;'>
+<h1>Answer the following questions as best as possible: </h1>
+<div style='transform: scale(0.65); position: relative; top: -100px; left: -200px;'>
     <h3>What is your GPA (weighted)?</h3>
     <p>Choose 1 answer</p>
-    <hr />
+    <hr/>
 
     <div id='block-11' style='padding: 10px;'>
-        <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='4.0+' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        <label for='option-11' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-11'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             4.0+</label>
         <span id='result-11'></span>
     </div>
-    <hr />
+    <hr/>
 
     <div id='block-12' style='padding: 10px;'>
-        <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='3.0+' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        <label for='option-12' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-12'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             3.0+</label>
         <span id='result-12'></span>
     </div>
-    <hr />
+    <hr/>
 
     <div id='block-13' style='padding: 10px;'>
-        <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='2.0+' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        <label for='option-13' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-13'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             2.0+</label>
         <span id='result-13'></span>
     </div>
-    <hr />
+    <hr/>
 
     <div id='block-14' style='padding: 10px;'>
-        <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='1.0+' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        <label for='option-14' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-14'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             1.0+</label>
         <span id='result-14'></span>
     </div>
-    <hr />
-    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+    <hr/>
+    <button type='button' onclick='displayAnswer1()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
     <a href="#section-2">Next Section</a>
 </div>
 <!-- will jump to... -->
 <section id="section-2"></section>
-<div style='transform: scale(0.65); position: relative; top: -100px;'>
-<h3>What is your ideal location?</h3>
-<p>Choose 1 answer</p>
-<hr />
+<div style='transform: scale(0.65); position: relative; top: -360px; left: -200px;'>
+    <h3>What is your ideal location?</h3>
+    <p>Choose 1 answer</p>
+    <hr/>
 
-<div id='block-15' style='padding: 10px;'>
-    <label for='option-15' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='4.0+' id='option-15' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-        East Coast</label>
-    <span id='result-15'></span>
-</div>
-<hr />
+    <div id='block-15' style='padding: 10px;'>
+        <label for='option-15' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-15'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            New England (CT, ME, MA, NH, RI, VT) </label>
+        <span id='result-15'></span>
+    </div>
+    <hr/>
 
-<div id='block-16' style='padding: 10px;'>
-    <label for='option-16' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='3.0+' id='option-16' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-        West Coast</label>
-    <span id='result-16'></span>
-</div>
-<hr />
+    <div id='block-16' style='padding: 10px;'>
+        <label for='option-16' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-16'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Mid East (DE, DC, MD, NJ, NY, PA) </label>
+        <span id='result-16'></span>
+    </div>
+    <hr/>
 
-<div id='block-17' style='padding: 10px;'>
-    <label for='option-17' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='2.0+' id='option-17' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-        Central</label>
-    <span id='result-17'></span>
-</div>
-<hr />
+    <div id='block-17' style='padding: 10px;'>
+        <label for='option-17' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-17'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Great Lakes (IL, IN, MI, OH, WI) </label>
+        <span id='result-17'></span>
+    </div>
+    <hr/>
 
-<div id='block-18' style='padding: 10px;'>
-    <label for='option-18' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='1.0+' id='option-18' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-        No Preference</label>
-    <span id='result-18'></span>
-</div>
-<hr />
-<button type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+    <div id='block-18' style='padding: 10px;'>
+        <label for='option-18' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-18'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Plains (IA, KS, MN, MO, NE, ND, SD) </label>
+        <span id='result-18'></span>
+    </div>
+    <hr/>
+
+    <div id='block-19' style='padding: 10px;'>
+        <label for='option-19' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-19'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV) </label>
+        <span id='result-19'></span>
+    </div>
+    <hr/>
+
+    <div id='block-20' style='padding: 10px;'>
+        <label for='option-20' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-20'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Southwest (AZ, NM, OK, TX)Southwest (AZ, NM, OK, TX) </label>
+        <span id='result-20'></span>
+    </div>
+    <hr/>
+
+    <div id='block-21' style='padding: 10px;'>
+        <label for='option-21' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-21'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Rocky Mountains (CO, ID, MT, UT, WY) </label>
+        <span id='result-21'></span>
+    </div>
+    <hr/>
+
+    <div id='block-22' style='padding: 10px;'>
+        <label for='option-22' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-22'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Far West (AK, CA, HI, NV, OR, WA) </label>
+        <span id='result-22'></span>
+    </div>
+    <hr/>
+
+    <div id='block-23' style='padding: 10px;'>
+        <label for='option-23' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-23'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Outlying Areas (AS, FM, GU, MH, MP, PR, PW, VI) </label>
+        <span id='result-23'></span>
+    </div>
+    <hr/>
+
+    <button type='button' onclick='displayAnswer2()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
     <a href="#section-3">Next Section</a>
 </div>
 <!-- will jump to... -->
 <section id="section-3"></section>
-<div style='transform: scale(0.65); position: relative; top: -100px;'>
+<div style='transform: scale(0.65); position: relative; top: -625px; left: -200px;'>
     <h3>What do you want a main focus of your campus to be?</h3>
     <p>Choose 1 answer</p>
-    <hr />
+    <hr/>
 
-    <div id='block-19' style='padding: 10px;'>
-        <label for='option-19' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='4.0+' id='option-19' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-24' style='padding: 10px;'>
+        <label for='option-24' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-24'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             Education</label>
-        <span id='result-19'></span>
+        <span id='result-24'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-20' style='padding: 10px;'>
-        <label for='option-20' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='3.0+' id='option-20' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-25' style='padding: 10px;'>
+        <label for='option-25' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-25'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             Sports</label>
-        <span id='result-20'></span>
+        <span id='result-25'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-21' style='padding: 10px;'>
-        <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='2.0+' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-26' style='padding: 10px;'>
+        <label for='option-26' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-26'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             Greeklife</label>
-        <span id='result-21'></span>
+        <span id='result-26'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-22' style='padding: 10px;'>
-        <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='1.0+' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-27' style='padding: 10px;'>
+        <label for='option-27' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-27'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             No Preference</label>
-        <span id='result-22'></span>
+        <span id='result-27'></span>
     </div>
-    <hr />
-    <button type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+    <hr/>
+    <button type='button' onclick='displayAnswer3()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
     <a href="#section-4">Next Section</a>
 </div>
 <!-- will jump to... -->
 <section id="section-4"></section>
-<div style='transform: scale(0.65); position: relative; top: -100px;'>
-    <h3>What is your budget per year?</h3>
+<div style='transform: scale(0.65); position: relative; top: -775px; left: -200px;'>
+    <h3>What do you prefer the environment to be?</h3>
     <p>Choose 1 answer</p>
-    <hr />
+    <hr/>
 
-    <div id='block-23' style='padding: 10px;'>
-        <label for='option-23' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='4.0+' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            5-15k</label>
-        <span id='result-23'></span>
+    <div id='block-28' style='padding: 10px;'>
+        <label for='option-28' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-28'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            City (Population: 100,000 - 250,000) </label>
+        <span id='result-28'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-24' style='padding: 10px;'>
-        <label for='option-24' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='3.0+' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            15-25k</label>
-        <span id='result-24'></span>
+    <div id='block-29' style='padding: 10px;'>
+        <label for='option-29' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-29'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Suburb (Population: 100,000 - 250,000) </label>
+        <span id='result-29'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-25' style='padding: 10px;'>
-        <label for='option-25' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='2.0+' id='option-25' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            25-35k</label>
-        <span id='result-25'></span>
+    <div id='block-30' style='padding: 10px;'>
+        <label for='option-30' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-30'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Town (cluster 10 - 35 miles away from urban area) </label>
+        <span id='result-30'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-26' style='padding: 10px;'>
-        <label for='option-26' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='1.0+' id='option-26' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-            35k+</label>
-        <span id='result-26'></span>
+    <div id='block-31' style='padding: 10px;'>
+        <label for='option-31' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-31'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Rural (5 - 25 miles away from urban area) </label>
+        <span id='result-31'></span>
     </div>
-    <hr />
-    <button type='button' onclick='displayAnswer4()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+    <hr/>
+    <button type='button' onclick='displayAnswer4()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
     <a href="#section-5">Next Section</a>
 </div>
 <!-- will jump to... -->
 <section id="section-5"></section>
-<div style='transform: scale(0.65); position: relative; top: -100px;'>
+<div style='transform: scale(0.65); position: relative; top: -930px; left: -200px;'>
     <h3>What majors/areas of study are you most interested in?</h3>
     <p>Choose 1 answer</p>
-    <hr />
+    <hr/>
 
-    <div id='block-27' style='padding: 10px;'>
-        <label for='option-27' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='4.0+' id='option-27' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-32' style='padding: 10px;'>
+        <label for='option-32' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-32'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             STEM</label>
-        <span id='result-27'></span>
+        <span id='result-32'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-28' style='padding: 10px;'>
-        <label for='option-28' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='3.0+' id='option-28' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-33' style='padding: 10px;'>
+        <label for='option-33' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-33'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             English/Journalism/History</label>
-        <span id='result-28'></span>
+        <span id='result-33'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-29' style='padding: 10px;'>
-        <label for='option-29' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='2.0+' id='option-29' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-34' style='padding: 10px;'>
+        <label for='option-34' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-34'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             Fine Arts</label>
-        <span id='result-29'></span>
+        <span id='result-34'></span>
     </div>
-    <hr />
+    <hr/>
 
-    <div id='block-30' style='padding: 10px;'>
-        <label for='option-30' style=' padding: 5px; font-size: 2.5rem;'>
-            <input type='radio' name='option' value='1.0+' id='option-30' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+    <div id='block-35' style='padding: 10px;'>
+        <label for='option-35' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-35'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
             Other</label>
-        <span id='result-30'></span>
+        <span id='result-35'></span>
     </div>
-    <hr />
-    <button type='button' onclick='displayAnswer5()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+    <hr/>
+    <button type='button' onclick='displayAnswer5()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
 </div>
-<a id='showanswer5'></a>
 
-<script>
+<section id="section-6"></section>
+<div style='transform: scale(0.65); position: relative; top: -1100px; left: -200px;'>
+    <h3>What degree are you looking to get in college?</h3>
+    <p>Choose 1 answer</p>
+    <hr/>
 
-</script>
+    <div id='block-36' style='padding: 10px;'>
+        <label for='option-36' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='4.0+' id='option-36'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Associates Degree</label>
+        <span id='result-36'></span>
+    </div>
+    <hr/>
+
+    <div id='block-37' style='padding: 10px;'>
+        <label for='option-37' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='3.0+' id='option-37'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Doctorate </label>
+        <span id='result-37'></span>
+    </div>
+    <hr/>
+
+    <div id='block-38' style='padding: 10px;'>
+        <label for='option-38' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='2.0+' id='option-38'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Master's Degree </label>
+        <span id='result-38'></span>
+    </div>
+    <hr/>
+
+    <div id='block-39' style='padding: 10px;'>
+        <label for='option-39' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-39'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            Bachelor's Degree</label>
+        <span id='result-39'></span>
+    </div>
+    <hr/>
+
+    <div id='block-40' style='padding: 10px;'>
+        <label for='option-40' style=' padding: 5px; font-size: 2rem;'>
+            <input type='radio' name='option' value='1.0+' id='option-40'
+                   style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
+            2 Year / 4 Year Special Focus</label>
+        <span id='result-40'></span>
+    </div>
+    <hr/>
+
+    <button type='button' onclick='displayAnswer5()'
+            style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>
+        Submit
+    </button>
+</div>
+<a id='showanswer6'></a>
+
 
 <style/>
 
-    h1 {
-      text-align: left;
-      padding-left: 45;
-      color: black;
-      font-size: 20px;
-      font-family: arial;
-    }
+h1 {
+text-align: left;
+padding-left: 45;
+color: black;
+font-size: 20px;
+font-family: arial;
+}
 
 {% endblock %}
