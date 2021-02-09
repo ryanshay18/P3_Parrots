@@ -46,17 +46,6 @@ def process_file(file_name):
     insert_school(school)
 
 
-# crs.execute("insert into schools values('my school', 11, 'CA')")
-
-
-# conn.commit()
-# conn.close()
-
-
-# print(conn)
-
-# print(process_file('schools/school-1.json'))
-
 for file in range(68):
   print('Reading file #' + str(file))
   file_name = 'schools/school-' + str(file) + '.json'

@@ -1,5 +1,7 @@
 # import requests
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+
+from quiz import quiz_data
 
 app = Flask(__name__)
 
@@ -16,7 +18,7 @@ def easteregg():
 
 @app.route('/quiz')
 def quiz():
-    return render_template("quiz.html")
+    return render_template("quiz.html", data=quiz_data(), question_index=0)
 
 
 @app.route('/about')
@@ -57,6 +59,14 @@ def feedback():
 @app.route('/responses/')
 def responses():
     return render_template("responses.html")
+
+
+@app.route('/next', methods=['POST'])
+def next_question():
+    print(request.form['answer'])
+    print(request.form['next_question'])
+    return render_template("quiz.html", data=quiz_data(),
+                           question_index=int(request.form['next_question']))
 
 
 if __name__ == "__main__":
