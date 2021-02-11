@@ -18,7 +18,10 @@ def easteregg():
 
 @app.route('/quiz')
 def quiz():
-    return render_template("quiz.html", data=quiz_data(), question_index=0)
+    return render_template("quiz.html",
+                           data=quiz_data(),
+                           question_index=0,
+                           answers='{}')
 
 
 @app.route('/about')
@@ -63,10 +66,19 @@ def responses():
 
 @app.route('/next', methods=['POST'])
 def next_question():
-    print(request.form['answer'])
-    print(request.form['next_question'])
-    return render_template("quiz.html", data=quiz_data(),
-                           question_index=int(request.form['next_question']))
+  print(request.form['answer'])
+  print(request.form['answers'])
+  print(request.form['next_question'])
+  return render_template("quiz.html",
+                         data=quiz_data(),
+                         question_index=int(request.form['next_question']),
+                         answers=request.form['answers'])
+
+@app.route('/submit', methods=['POST'])
+def submit():
+  print(request.form['answers'])
+  return render_template("results.html")
+
 
 
 if __name__ == "__main__":
