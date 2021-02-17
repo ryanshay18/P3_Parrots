@@ -10,7 +10,7 @@ Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
 # Crossover Report
 - Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- Recommendations for enhancements
+- Recommendations for enhancement:
 - Improve looks of site, not much CSS can be seen right now 
 - Maybe add more questions to the quiz - would refine the college selection more
 Comments
