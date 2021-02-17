@@ -1,6 +1,13 @@
 # BeakersTorts
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
+# Crossover Tickets
+- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- What youll find in the crossover tickets:
+- Main focus for week based off crossover report
+- Accomplishments/code base off crossover report
+
+
 # Crossover Report
 - Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - Recommendations for enhancements
