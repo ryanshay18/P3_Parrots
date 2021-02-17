@@ -1,6 +1,17 @@
 # BeakersTorts
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
+# Crossover Report
+-Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+-Recommendations for enhancements
+-Improve looks of site, not much CSS can be seen right now 
+-Maybe add more questions to the quiz - would refine the college selection more
+Comments
+-Overall the project was really well put together and executed, the presentation itself was organized and flowed really well.
+-Next time potentially have it more equally split, seemed like Valerie explained most of the technical things
+-User suggestion page was creative and seems useful
+
+
 # Ticket/Easter Egg (Info/Link)
 -Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - What You'll Find in the link:
