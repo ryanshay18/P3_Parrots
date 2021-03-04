@@ -23,7 +23,132 @@ https://github.com/valeriemiliteeva/BeakersTorts/projects/1
     Are you interested in going to graduate school? If so, which one?
 - Based off of information collected from user input, our database would perform a query and select the colleges that make the most sense for the user. These would   then be displayed on the page and the user would have the option to explore the college link and read more about each feature.
 - Our database would be a local created from SQLAlchemy and data would be entered from a scraping program we are hoping to write
+# Project code
+## Database (Val)
+```# school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
+ crs.execute('''create table schools (
+                  name text, 
+                  region_id integer, 
+                  state text)''')
+                  name text,
+                  city text,
+                  state text,
+                  url text,
+                  region_id integer,
+                  locale integer,
+                  carnegie_size_setting integer,
+                  carnegie_basic integer,
+                  carnegie_undergrad integer,
+                  ownership integer)''')
 
+ crs.execute("insert into schools values('my school', 11, 'CA')")
+ def insert_school(school):
+   locale = str(school['school.locale']) if school['school.locale'] else 'null'
+   carnegie_size_setting = str(school['school.carnegie_size_setting']) if school['school.carnegie_size_setting'] else 'null'
+   carnegie_basic = str(school['school.carnegie_basic']) if school['school.carnegie_basic'] else 'null'
+   carnegie_undergrad = str(school['school.carnegie_undergrad']) if school['school.carnegie_undergrad'] else 'null'
+   ownership = str(school['school.ownership']) if school['school.ownership'] else 'null'
+   url = '"' + school['school.school_url'] + '"' if school['school.school_url'] else 'null'
+   query = 'insert into schools values(' + \
+           '"' + school['school.name'] + '", ' + \
+           '"' + school['school.city'] + '", ' + \
+           '"' + school['school.state'] + '", ' + \
+           url + ', ' + \
+           str(school['school.region_id']) + ', ' + \
+           locale + ', ' + \
+           carnegie_size_setting + ', ' + \
+           carnegie_basic + ', ' + \
+           carnegie_undergrad + ', ' + \
+           ownership + ")"
+   print(query)
+   crs.execute(query)
+
+```
+## API (Val)
+```import requests
+
+# url = "https://api.data.gov/ed/collegescorecard/v1/schools"
+# url = "https://developer.nrel.gov/api/collegescorecard/v1/schools"
+
+url = "https://api.data.gov/ed/collegescorecard/v1/schools?_per_page=100&_page={page}&" \
+      "api_key=9o9cbIMIYKRe90jn29mhBTS1AZXbCvyLf0EygeES&" \
+      "fields=school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad"
+
+# print(url.replace("{page}", "11"))
+
+for page in range(68):
+  print('Reading page #' + str(page))
+  response = requests.request("GET", url.replace("{page}", str(page)))
+  with open('school-' + str(page) + '.json', 'w') as f:
+    print(response.text, file=f)
+
+
+# with open('page1.json', 'w') as f:
+#     print('here goes page 111', file=f)
+
+#
+# response = requests.request("GET", url)
+# print(response.text)
+```
+## Easter egg Code (Billy)
+```
+<h2> How our project relates to College Board</h2>
+<li>College board requirements: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf</li>
+<iframe height="500px" width="300%" src="https://docs.google.com/document/d/1KuVEQKO4vod8RELblmBYNGX1hycmg6xARQu5i1R0tbs/edit" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<h3> Who am I in Computer Science?</h3>
+<h3> Billy</h3>
+<iframe height="500px" width="300%" src="https://docs.google.com/document/d/1-4_LNqjEzu4XzEIR3LJe44UwOqnq9JtpCC5kK2A2CCI/edit" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<h3> Lola</h3>
+<iframe height="500px" width="300%" src="https://docs.google.com/document/d/15b3xgcVgTHbtVvusDHCTwOTVEN_03TTAL60cbxbmlwM/edit" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<h3> Valerie</h3>
+<iframe height="500px" width="300%" src="https://docs.google.com/document/d/18q2dMFWUwg-MGMfykfqJoBkHspU-ADS05f5b_OvS7M8/edit" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<h3> Michael</h3>
+<!--<iframe height="500px" width="300%" src="(insert link here)" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>-->
+
+```
+## MC page (Lola)
+```{% if question_index == data|length - 1 %}
+<form action="/submit" method="post">
+{% else %}
+<form action="/next" method="post">
+{% endif %}
+
+  <div class="question">
+  <div class="question_text">{{ data[question_index].question }}</div>
+    {% for answer in data[question_index].answers %}
+      <div class="question_answer">
+        <label>
+          <input type="radio" name="answer" value="{{ answer.index }}" onclick="onSelectQuestion(event)">
+          {{ answer.text }}
+        </label>
+      </div>
+    {% endfor %}
+    <input type="hidden" name="next_question" value="{{ question_index + 1 }}">
+    <input type="hidden" name="answers" value="{{ answers }}">
+    {% if question_index == data|length - 1 %}
+    <input type="submit" value="Submit" class="button" disabled>
+    {% else %}
+    <input type="submit" value="Next" class="button" disabled>
+    {% endif %}
+  </div>
+</form>
+
+<script>
+  function onSelectQuestion(event) {
+    document.querySelectorAll('.button').forEach((button) => {
+      button.removeAttribute('disabled');
+    });
+    const answersInput  = document.getElementsByName('answers')[0];
+    const answersObj = JSON.parse(answersInput.value);
+    answersObj['{{question_index}}'] = event.currentTarget.value;
+    answersInput.value = JSON.stringify(answersObj);
+```
+## Rasberry pi (Michael)
+```Rasberry Pi
+```
 # Our Tickets for our project
 ## Crossover Tickets
 - Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
