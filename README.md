@@ -5,11 +5,11 @@ Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
 
-# Project Scrum Board Link:
+## Project Scrum Board Link:
 This Project Board contains the progress made by the scrum members to complete the big ticket item/idea and the assignments the srum master assigns his scrum members.
 https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 
-# Project Details
+## Project Details
 - Questions asked: User will be asked questions that help us gear them towards which college they would prefer.
 - Ex. What is your ideal major?
     What kind of careers most interest you?
@@ -59,7 +59,7 @@ Evidence and links to code are in the project board
 - Michael 19/20- Worked on deploying the website. 
 - Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
 - Billy 17/20- Worked on database and create.py to define
-## Goals achieved
+## Goals achieved for tickets
 Scrum Board has the official Tickets and is names of people assigned to each ticket.
 Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - multiple choice questions created on the questions page.                          
@@ -96,9 +96,9 @@ Midterm is finished. So far what is done is:
 - quiz page in progress (nearly finished)
 - Web page running off of a rasberry pi
 # Night at the Museum
-By the time Night at the Museum comes around, The project should be nearly finished and ready to run off the rasberry pi.
+Project is up and running on pi and is finsished.
 # College Board
-To meet and exceed College Board requirements, this project will include a SQLAlchemy Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
+To meet and exceed College Board requirements, this project will include a SQL Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
 
 College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
 
