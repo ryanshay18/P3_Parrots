@@ -1,48 +1,7 @@
-#                                                                         BeakersTorts
-                                                Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
-
-# Crossover Tickets
-- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- What youll find in the crossover tickets:
-- Main focus for week based off crossover report
-- Accomplishments/code base off crossover report
+# BeakersTorts
+Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
 
-# Crossover Report
-- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- Recommendations for enhancement:
-- Improve looks of site, not much CSS can be seen right now 
-- Maybe add more questions to the quiz - would refine the college selection more
-Comments
-- Overall the project was really well put together and executed, the presentation itself was organized and flowed really well.
-- Next time potentially have it more equally split, seemed like Valerie explained most of the technical things
-- User suggestion page was creative and seems useful
-
-
-# Ticket/Easter Egg (Info/Link)
--Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- What You'll Find in the link:
-- Code/indivisual contribution and discrimption of the ticket
-- Ticket(1)= Database/Query
-- Ticket(2)= UI/Mc Page 
-- Ticket(3)= Easter Egg
-
-# Our Big ticket website video- 
-since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
-https://youtu.be/LaLQzCo173c
-
-# Scrum master ticket grading
-Evidence and links to code are in the project board 
-- Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
-- Michael 19/20- Worked on deploying the website. 
-- Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
-- Billy 17/20- Worked on database and create.py to define
-# Goals achieved
-Scrum Board has the official Tickets and is names of people assigned to each ticket.
-Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- multiple choice questions created on the questions page.                          
-- Feed back page created; user is able to input their thoughts on our page
-- api databases collected and ready to connect to the database
 # Project Overview:
 This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options for colleges for the user and the information will be obtained by a python web scraper.
 
@@ -64,6 +23,49 @@ https://github.com/valeriemiliteeva/BeakersTorts/projects/1
     Are you interested in going to graduate school? If so, which one?
 - Based off of information collected from user input, our database would perform a query and select the colleges that make the most sense for the user. These would   then be displayed on the page and the user would have the option to explore the college link and read more about each feature.
 - Our database would be a local created from SQLAlchemy and data would be entered from a scraping program we are hoping to write
+
+# Our Tickets for our project
+## Crossover Tickets
+- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- What youll find in the crossover tickets:
+- Main focus for week based off crossover report
+- Accomplishments/code base off crossover report
+## Crossover Report
+- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- Recommendations for enhancement:
+- Improve looks of site, not much CSS can be seen right now 
+- Maybe add more questions to the quiz - would refine the college selection more
+Comments
+- Overall the project was really well put together and executed, the presentation itself was organized and flowed really well.
+- Next time potentially have it more equally split, seemed like Valerie explained most of the technical things
+- User suggestion page was creative and seems useful
+
+
+## Ticket/Easter Egg (Info/Link)
+-Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- What You'll Find in the link:
+- Code/indivisual contribution and discrimption of the ticket
+- Ticket(1)= Database/Query
+- Ticket(2)= UI/Mc Page 
+- Ticket(3)= Easter Egg
+
+## Our Big ticket website video- 
+since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
+https://youtu.be/LaLQzCo173c
+
+## Scrum master ticket grading
+Evidence and links to code are in the project board 
+- Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
+- Michael 19/20- Worked on deploying the website. 
+- Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
+- Billy 17/20- Worked on database and create.py to define
+## Goals achieved
+Scrum Board has the official Tickets and is names of people assigned to each ticket.
+Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- multiple choice questions created on the questions page.                          
+- Feed back page created; user is able to input their thoughts on our page
+- api databases collected and ready to connect to the database
+
 
 ![Project Plan 1](https://user-images.githubusercontent.com/43625360/101848081-7e9e9a80-3b09-11eb-915c-4bfbc809652c.png)
 
