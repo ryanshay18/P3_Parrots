@@ -16,7 +16,7 @@ The user will be asked a series of multiple choice questions all college related
 
 ### College Database
 ### Easter Egg page
-Includes embedded documents of:
+***Includes embedded documents of***
 - Who am I in Computer Science for each team member
 - Links to pair share journals
 - How our project meets college board requiremnets 
