@@ -1,28 +1,28 @@
-# BeakersTorts
+# BeakersTorts's College survey
 Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
 
-
 # Project Overview:
-This project is meant to give the user a series of questions that will then reveal the best college for the user. Our database will include thousands of possible options of colleges for the user and the information will be obtained from an API.
+The user will be asked a series of multiple choice questions all college related. Then after the user answer's all of the questions, the user will be given a select number of colleges based on the answers given. To make this College Survey accurate, the creators implemented an API that contains thousands of colleges for the algorithim to choose from that best suits the user.
 
-## Project Scrum Board Link:
-This Project Board contains the progress made by the scrum members to complete the big ticket item/idea and the assignments the srum master assigns the scrum members.
-https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+**IMPORTANT** : To easily navigate our site, please use the navbar at the top left of the home screen for guidence.
 
-## Project Details
-- Questions asked: User will be asked questions that help us gear them towards which college they would prefer.
-- Ex. What is your ideal major?
-    What kind of careers most interest you?
-    Where is your ideal location for college?
-  
-    Are you more inclined towards academics or sports?
-    Do you have an interest in Greek Life?
-    What is your weighted GPA?
-    What campus lifestyle do you prefer?
-    Do you have a budget? If so, what is your prefered range per year?
-    Are you interested in going to graduate school? If so, which one?
-- Based off of information collected from user input, our database would perform a query and select the colleges that make the most sense for the user. These would   then be displayed on the page and the user would have the option to explore the college link and read more about each feature.
-- Our database would be a local created from SQLAlchemy and data would be entered from a scraping program we are hoping to write
+# Project Details
+### Multiple Choice Quiz Page
+***Some questions asked***
+- What do you prefer the environment to be?
+- What is your ideal location?
+- What majors/areas of study are you most interested in?
+- What degree are you looking to get in college?
+
+### College Database
+### Easter Egg page
+Includes embedded documents of:
+- Who am I in Computer Science for each team member
+- Links to pair share journals
+- How our project meets college board requiremnets 
+### About Us Page
+- This page contains all the fun information you need to know about your favorite creators! From fun pictures to interesting facts, this page will help you get closer to the Team!
+
 # Project Code Snippets
 ## Database (Val)
 ```# school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
@@ -150,12 +150,12 @@ for page in range(68):
 ```Rasberry Pi
 ```
 # Tickets completed throughout the Project
-## Crossover Tickets
+### Crossover Tickets
 - Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - What youll find in the crossover tickets:
 - Main focus for week based off crossover report
 - Accomplishments/code base off crossover report
-## Crossover Report
+### Crossover Report
 - Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - Recommendations for enhancement:
 - Improve looks of site, not much CSS can be seen right now 
@@ -166,7 +166,7 @@ Comments
 - User suggestion page was creative and seems useful
 
 
-## Ticket/Easter Egg (Info/Link)
+### Ticket/Easter Egg (Info/Link)
 -Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - What You'll Find in the link:
 - Code/indivisual contribution and discrimption of the ticket
@@ -174,17 +174,17 @@ Comments
 - Ticket(2)= UI/Mc Page 
 - Ticket(3)= Easter Egg
 
-## Our Big ticket website video- 
+### Our Big ticket website video- 
 since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
 https://youtu.be/LaLQzCo173c
 
-## Scrum master ticket grading
+### Scrum master ticket grading
 Evidence and links to code are in the project board 
 - Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
 - Michael 19/20- Worked on deploying the website. 
 - Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
 - Billy 17/20- Worked on database and create.py to define
-## Justification for grading
+### Justification for grading
 Scrum Board has the official Tickets and is names of people assigned to each ticket.
 Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
 - multiple choice questions created on the questions page.                          
@@ -213,10 +213,10 @@ To meet and exceed College Board requirements, this project will include a SQL D
 
 College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
 
-# Creators & Github IDs
-NAME             | GITHUB ID |
+# Creators & Github Links
+NAME             | GITHUB Link |
 -------------    | --------------- |
-William Cherres | BillyCherres  |
-Valerie Militeeva | valeriemiliteeva |
-Lola Bulkin  | lolabulkin |
-Michael Irribarren    | MichaelIribarren |
+William Cherres | https://github.com/BillyCherres  |
+Valerie Militeeva | https://github.com/valeriemiliteeva |
+Lola Bulkin  | https://github.com/lolabulkin |
+Michael Irribarren    | https://github.com/MichaelIribarren |
