@@ -1,5 +1,12 @@
 # BeakersTorts's College survey
-Billy Cherres, Valerie Militeeva, Lola Bulkin, Michael Iribarren
+
+# Creators & Github Links
+NAME             | GITHUB Link |
+-------------    | --------------- |
+William Cherres | https://github.com/BillyCherres  |
+Valerie Militeeva | https://github.com/valeriemiliteeva |
+Lola Bulkin  | https://github.com/lolabulkin |
+Michael Irribarren    | https://github.com/MichaelIribarren |
 
 # Project Overview:
 The user will be asked a series of multiple choice questions all college related. Then after the user answer's all of the questions, the user will be given a select number of colleges based on the answers given. To make this College Survey accurate, the creators implemented an API that contains thousands of colleges for the algorithim to choose from that best suits the user.
@@ -213,10 +220,3 @@ To meet and exceed College Board requirements, this project will include a SQL D
 
 College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
 
-# Creators & Github Links
-NAME             | GITHUB Link |
--------------    | --------------- |
-William Cherres | https://github.com/BillyCherres  |
-Valerie Militeeva | https://github.com/valeriemiliteeva |
-Lola Bulkin  | https://github.com/lolabulkin |
-Michael Irribarren    | https://github.com/MichaelIribarren |
