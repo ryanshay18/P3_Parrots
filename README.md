@@ -23,6 +23,7 @@ About Us Page    | This page contains all the fun information you need to know a
 
 # Project Code Snippets
 ## Database (Val)
+- This code shoes the complexity of the database and demonstrates the attributes being pulled from the api and being implemented into the database.
 ```# school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
  crs.execute('''create table schools (
                   name text, 
@@ -63,6 +64,7 @@ About Us Page    | This page contains all the fun information you need to know a
 
 ```
 ## API (Val)
+- This code shows the api being used in the project and the process of implementing the attributes from this api into the database code which is up above in the  Database code section. 
 ```import requests
 
 # url = "https://api.data.gov/ed/collegescorecard/v1/schools"
@@ -89,6 +91,7 @@ for page in range(68):
 # print(response.text)
 ```
 ## Easter egg Code (Billy)
+- This code gives an example of how embedding was used in this easter egg page.
 ```
 <h2> How our project relates to College Board</h2>
 <li>College board requirements: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf</li>
@@ -108,6 +111,7 @@ for page in range(68):
 
 ```
 ## MC page (Lola)
+- This code is an example of the usage of Post and how we were able to show the questions and submit button on to this page.
 ```{% if question_index == data|length - 1 %}
 <form action="/submit" method="post">
 {% else %}
@@ -145,7 +149,9 @@ for page in range(68):
     answersInput.value = JSON.stringify(answersObj);
 ```
 ## Rasberry pi (Michael)
-```Rasberry Pi
+- This project runs off of a rasberry pi
+```
+Rasberry Pi
 ```
 # Tickets completed throughout the Project
 ### Crossover Tickets
