@@ -14,21 +14,12 @@ The user will be asked a series of multiple choice questions all college related
 **IMPORTANT** : To easily navigate our site, please use the navbar at the top left of the home screen for guidence.
 
 # Project Details
-### Multiple Choice Quiz Page
-***Some questions asked***
-- What do you prefer the environment to be?
-- What is your ideal location?
-- What majors/areas of study are you most interested in?
-- What degree are you looking to get in college?
-
-### College Database
-### Easter Egg page
-***Includes embedded documents of***
-- Who am I in Computer Science for each team member
-- Links to pair share journals
-- How our project meets college board requiremnets 
-### About Us Page
-- This page contains all the fun information you need to know about your favorite creators! From fun pictures to interesting facts, this page will help you get closer to the Team!
+Section            | Details |
+-------------    | --------------- |
+Multiple Choice Page | Some questions asked will be: What do you prefer the environment to be? What is your ideal location? What majors/areas of study are you most interested in? What degree are you looking to get in college?|
+College Database  | The database implemented into the College Survey Project holds over a thousand colleges and their attributes like school size, city, state, size, and type of school (private/public) |
+Easter egg  | Contains: Who am I in Computer Science for each team member, Links to pair share journals, How our project meets college board requiremnets  |
+About Us Page    | This page contains all the fun information you need to know about your favorite creators! From fun pictures to interesting facts, this page will help you get closer to the Team! |
 
 # Project Code Snippets
 ## Database (Val)
