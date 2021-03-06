@@ -17,7 +17,7 @@ The user will be asked a series of multiple choice questions all college related
 Section            | Details |
 -------------    | --------------- |
 Multiple Choice Page | **Some questions asked will be:** What do you prefer the environment to be? What is your ideal location? What majors/areas of study are you most interested in? What degree are you looking to get in college?|
-College Database  | The database implemented into the College Survey Project holds over a thousand colleges and their attributes like school size, city, state, size, and type of school (private/public) |
+College Database  | The database implemented into the College Survey Project holds over a thousand colleges and their attributes like school size, city, state, and if it offers undergrad and postgraduate degrees |
 Easter egg  | **Contains:** Who am I in Computer Science for each team member, Links to pair share journals, How our project meets college board requiremnets  |
 About Us Page    | This page contains all the fun information you need to know about your favorite creators! From fun pictures to interesting facts, this page will help you get closer to the Team! |
 
