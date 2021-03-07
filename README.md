@@ -163,12 +163,13 @@ Rasberry Pi
 |  Michael  |  Work on rasberry pi code   | Ras pi code  |
 
 ### Ticket/Easter Egg (Info/Link)
--Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- What You'll Find in the link:
-- Code/indivisual contribution and discrimption of the ticket
-- Ticket(1)= Database/Query
-- Ticket(2)= UI/Mc Page 
-- Ticket(3)= Easter Egg
+| Name  |      Goal      |  Acomplished |
+|----------|-------------|------|
+| Billy | Create the Easter Egg page | Was able to create the easter egg page and a secret easter egg button that can be found on the home page. In the Easter egg page, there is an implementation of embedding from Trimester one of APCSP and a Who am I in APCSP?" assignment for each teammember. Easter egg link: http://104.2.87.139:8080/easteregg/ . ***Code is featured in Project code snippets***|
+| Valerie | Work on the database | Creation of a new database is needed and a search for a New API is needed aswell because the API we have right now doen't have enough information about the schools. Started the process of a SQL lite database instead of the SQL Alchemy database that we used before. |
+| Lola | Work on MC Page and Feed back Page | Was able to create the multiple choice questions on the MC Page and get the MC questions to work. Now what is needed is the questions to be connected to the database and then the MC page will be complete.|
+| Michael   |  Rasberry Pi    |  Runs off a Rasberry Pi     |
+
 
 ### Our Big ticket website video- 
 since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
