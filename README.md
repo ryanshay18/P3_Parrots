@@ -31,7 +31,8 @@ About Us Page    | This page contains all the fun information you need to know a
 ## Database (Val)
 - This code shows the usage of SQLite3 for the database.
 - Link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/a309431ae11a8ea9e9b687ccc779f5da41859234/query.py#L1-L12
-```import sqlite3
+```
+import sqlite3
 
 # https://collegescorecard.ed.gov/data/documentation/
 
