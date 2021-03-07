@@ -97,7 +97,7 @@ for page in range(68):
 ```
 ## MC page (Lola)
 - This code is an example of the usage of Post and how we were able to show the questions and submit button on to this page.
-- Link to MC page: http://beakerscollegepicker.tk
+- Link to MC page: http://104.2.87.139:8080/quiz
 - Link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/a309431ae11a8ea9e9b687ccc779f5da41859234/templates/quiz.html#L1-L74
 ```{% if question_index == data|length - 1 %}
 <form action="/submit" method="post">
