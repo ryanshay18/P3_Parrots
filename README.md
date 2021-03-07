@@ -1,5 +1,11 @@
 # BeakersTorts's College survey
 
+# links
+- Website link: http://beakerscollegepicker.tk
+- Easter egg: http://104.2.87.139:8080/easteregg/
+- Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
+- First Big Ticket Video: https://youtu.be/LaLQzCo173c
+
 # Creators & Github Links
 NAME             | GITHUB Link |
 -------------    | --------------- |
@@ -170,10 +176,17 @@ Rasberry Pi
 | Lola | Work on MC Page and Feed back Page | Was able to create the multiple choice questions on the MC Page and get the MC questions to work. Now what is needed is the questions to be connected to the database and then the MC page will be complete.|
 | Michael   |  Rasberry Pi    |  Runs off a Rasberry Pi     |
 
-
-### Our Big ticket website video- 
-since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
+### First Big Ticket
+***Our Big ticket website video*** 
+-since deployment didn't go as planned, a 2 minute video was created to show you the big ticket items for this week.
 https://youtu.be/LaLQzCo173c
+| Name   |   Goal   |  Accomplished |
+|----------|-------------|--------|
+| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. |
+| Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. |
+| Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page.  |
+| Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi    |
+
 
 ### Scrum master ticket grading
 Evidence and links to code are in the project board 
