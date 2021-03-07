@@ -29,48 +29,24 @@ About Us Page    | This page contains all the fun information you need to know a
 
 # Project Code Snippets
 ## Database (Val)
-- This code shows the complexity of the database and demonstrates the attributes being pulled from the api and being implemented into the database.
-```# school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
- crs.execute('''create table schools (
-                  name text, 
-                  region_id integer, 
-                  state text)''')
-                  name text,
-                  city text,
-                  state text,
-                  url text,
-                  region_id integer,
-                  locale integer,
-                  carnegie_size_setting integer,
-                  carnegie_basic integer,
-                  carnegie_undergrad integer,
-                  ownership integer)''')
+- This code shows the usage of SQLite3 for the database.
+- Link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/a309431ae11a8ea9e9b687ccc779f5da41859234/query.py#L1-L12
+```import sqlite3
 
- crs.execute("insert into schools values('my school', 11, 'CA')")
- def insert_school(school):
-   locale = str(school['school.locale']) if school['school.locale'] else 'null'
-   carnegie_size_setting = str(school['school.carnegie_size_setting']) if school['school.carnegie_size_setting'] else 'null'
-   carnegie_basic = str(school['school.carnegie_basic']) if school['school.carnegie_basic'] else 'null'
-   carnegie_undergrad = str(school['school.carnegie_undergrad']) if school['school.carnegie_undergrad'] else 'null'
-   ownership = str(school['school.ownership']) if school['school.ownership'] else 'null'
-   url = '"' + school['school.school_url'] + '"' if school['school.school_url'] else 'null'
-   query = 'insert into schools values(' + \
-           '"' + school['school.name'] + '", ' + \
-           '"' + school['school.city'] + '", ' + \
-           '"' + school['school.state'] + '", ' + \
-           url + ', ' + \
-           str(school['school.region_id']) + ', ' + \
-           locale + ', ' + \
-           carnegie_size_setting + ', ' + \
-           carnegie_basic + ', ' + \
-           carnegie_undergrad + ', ' + \
-           ownership + ")"
-   print(query)
-   crs.execute(query)
+# https://collegescorecard.ed.gov/data/documentation/
 
+conn = sqlite3.connect('schools.db')
+
+# crs = conn.cursor()
+
+# def construct_query(region, locale)
+
+for row in conn.execute("select name, city, state, url, locale, carnegie_basic from schools where city = 'Denver' and carnegie_basic = 11"):
+  print(row)
 ```
 ## API (Val)
 - This code shows the api being used in the project and the process of implementing the attributes from this api into the database code which is up above in the  Database code section. 
+- link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api4.py
 ```import requests
 
 # url = "https://api.data.gov/ed/collegescorecard/v1/schools"
@@ -98,6 +74,8 @@ for page in range(68):
 ```
 ## Easter egg Code (Billy)
 - This code gives an example of how embedding was used in this easter egg page.
+- Link to easter egg page: http://104.2.87.139:8080/easteregg/
+- Link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/a309431ae11a8ea9e9b687ccc779f5da41859234/templates/easteregg.html#L1-L100
 ```
 <h2> How our project relates to College Board</h2>
 <li>College board requirements: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf</li>
@@ -118,6 +96,8 @@ for page in range(68):
 ```
 ## MC page (Lola)
 - This code is an example of the usage of Post and how we were able to show the questions and submit button on to this page.
+- Link to MC page: http://beakerscollegepicker.tk
+- Link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/a309431ae11a8ea9e9b687ccc779f5da41859234/templates/quiz.html#L1-L74
 ```{% if question_index == data|length - 1 %}
 <form action="/submit" method="post">
 {% else %}
