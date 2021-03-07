@@ -29,7 +29,7 @@ About Us Page    | This page contains all the fun information you need to know a
 
 # Project Code Snippets
 ## Database (Val)
-- This code shoes the complexity of the database and demonstrates the attributes being pulled from the api and being implemented into the database.
+- This code shows the complexity of the database and demonstrates the attributes being pulled from the api and being implemented into the database.
 ```# school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
  crs.execute('''create table schools (
                   name text, 
