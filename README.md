@@ -155,20 +155,12 @@ Rasberry Pi
 ```
 # Tickets completed throughout the Project
 ### Crossover Tickets
-- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- What youll find in the crossover tickets:
-- Main focus for week based off crossover report
-- Accomplishments/code base off crossover report
-### Crossover Report
-- Where you'll find ticket based on crossover report: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- Recommendations for enhancement:
-- Improve looks of site, not much CSS can be seen right now 
-- Maybe add more questions to the quiz - would refine the college selection more
-Comments
-- Overall the project was really well put together and executed, the presentation itself was organized and flowed really well.
-- Next time potentially have it more equally split, seemed like Valerie explained most of the technical things
-- User suggestion page was creative and seems useful
-
+| Name  |      Goal      |  Acomplished |
+|----------|-------------|------|
+| Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. |
+| Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group.   |
+| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. |
+|  Michael  |  Work on rasberry pi code   | Ras pi code  |
 
 ### Ticket/Easter Egg (Info/Link)
 -Where you'll find ticket and easter egg info: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
