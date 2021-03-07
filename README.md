@@ -182,24 +182,10 @@ Rasberry Pi
 https://youtu.be/LaLQzCo173c
 | Name   |   Goal   |  Accomplished |
 |----------|-------------|--------|
-| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. |
-| Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. |
+| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for teh MySql database. |
+| Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page.|
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page.  |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi    |
-
-
-### Scrum master ticket grading
-Evidence and links to code are in the project board 
-- Valerie 19/20- searched for and found api databases/ upgraded the home page with carousol
-- Michael 19/20- Worked on deploying the website. 
-- Lola 19/20 - Created feedback page questions/ worked on Quiz questions page.
-- Billy 17/20- Worked on database and create.py to define
-### Justification for grading
-Scrum Board has the official Tickets and is names of people assigned to each ticket.
-Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
-- multiple choice questions created on the questions page.                          
-- Feed back page created; user is able to input their thoughts on our page
-- api databases collected and ready to connect to the database
 
 # Final Project Delivery Plan
 ## Fridays
