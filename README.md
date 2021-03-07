@@ -163,17 +163,17 @@ Rasberry Pi
 ### Crossover Tickets
 | Name  |      Goal      |  Acomplished |
 |----------|-------------|------|
-| Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. |
-| Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group.   |
-| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. |
+| Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123476|
+| Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123481 |
+| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
 |  Michael  |  Work on rasberry pi code   | Ras pi code  |
 
 ### Ticket/Easter Egg (Info/Link)
 | Name  |      Goal      |  Acomplished |
 |----------|-------------|------|
-| Billy | Create the Easter Egg page | Was able to create the easter egg page and a secret easter egg button that can be found on the home page. In the Easter egg page, there is an implementation of embedding from Trimester one of APCSP and a Who am I in APCSP?" assignment for each teammember. Easter egg link: http://104.2.87.139:8080/easteregg/ . ***Code is featured in Project code snippets***|
-| Valerie | Work on the database | Creation of a new database is needed and a search for a New API is needed aswell because the API we have right now doen't have enough information about the schools. Started the process of a SQL lite database instead of the SQL Alchemy database that we used before. |
-| Lola | Work on MC Page and Feed back Page | Was able to create the multiple choice questions on the MC Page and get the MC questions to work. Now what is needed is the questions to be connected to the database and then the MC page will be complete.|
+| Billy | Create the Easter Egg page | Was able to create the easter egg page and a secret easter egg button that can be found on the home page. In the Easter egg page, there is an implementation of embedding from Trimester one of APCSP and a Who am I in APCSP?" assignment for each teammember. Easter egg link: http://104.2.87.139:8080/easteregg/ . Link to Code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54127311|
+| Valerie | Work on the database | Creation of a new database is needed and a search for a New API is needed aswell because the API we have right now doen't have enough information about the schools. Started the process of a SQL lite database instead of the SQL Alchemy database that we used before. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54264824|
+| Lola | Work on MC Page and Feed back Page | Was able to create the multiple choice questions on the MC Page and get the MC questions to work. Now what is needed is the questions to be connected to the database and then the MC page will be complete. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54264779|
 | Michael   |  Rasberry Pi    |  Runs off a Rasberry Pi     |
 
 ### First Big Ticket
@@ -182,10 +182,10 @@ Rasberry Pi
 https://youtu.be/LaLQzCo173c
 | Name   |   Goal   |  Accomplished |
 |----------|-------------|--------|
-| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for teh MySql database. |
-| Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page.|
-| Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page.  |
-| Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi    |
+| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for teh MySql database. link to code: https://rapidapi.com/sshanbond/api/university-college-list-and-rankings|
+| Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api2.py#L1-L14|
+| Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
+| Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
 
 # Final Project Delivery Plan
 ## Fridays
