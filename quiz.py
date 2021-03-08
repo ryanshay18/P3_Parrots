@@ -1,3 +1,5 @@
+from query import query_colleges
+
 class Answer:
     def __init__(self, answer_index, answer_text):
         self.index = answer_index
@@ -47,6 +49,12 @@ questions = [
 
 def quiz_data():
     return questions
+
+
+def handle_response(answers):
+    print(answers)
+    return query_colleges()
+    return "Hello my little Pinguino!"
 
 # questions =
 #

@@ -18,6 +18,7 @@ crs.execute('''create table schools (
                  carnegie_undergrad integer,
                  ownership integer)''')
 
+
 def insert_school(school):
   locale = str(school['school.locale']) if school['school.locale'] else 'null'
   carnegie_size_setting = str(school['school.carnegie_size_setting']) if school['school.carnegie_size_setting'] else 'null'
@@ -38,6 +39,7 @@ def insert_school(school):
           ownership + ")"
   print(query)
   crs.execute(query)
+
 
 def process_file(file_name):
   with open(file_name) as f:

@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 
 from quiz import quiz_data
 
+from query import query_colleges
+
 app = Flask(__name__)
 
 
@@ -76,8 +78,9 @@ def next_question():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-  print(request.form['answers'])
-  return render_template("results.html")
+    print(request.form['answers'])
+    colleges = query_colleges(request.form['answers'])
+    return render_template("results.html", colleges=colleges)
 
 
 
