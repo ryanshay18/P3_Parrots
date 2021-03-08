@@ -147,7 +147,7 @@ Rasberry Pi
 |-------- | ------ | ------- |
 | Billy      | Readme       | Re-modeled the whole readme base off Mr. Mortensons preferences. Used the website: https://www.markdownguide.org/extended-syntax/ to help me understand the syntax of markdown.   |
 | Valerie   | we now processing answers and showing schools.| Was able to print out what college is best for the user based off their quiz answers. Code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-56438102 |
-|  Lola |  Readme   | Goal was to insert images into the readme and still in the process. Should be finished by N@TM comes around.  |
+|  Lola |  Readme   | Goal was to insert images into the readme. Inserted the a picture of the home page into the readme. |
 |  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
 
 ### Crossover Tickets
@@ -176,7 +176,6 @@ https://youtu.be/LaLQzCo173c
 | Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api2.py#L1-L14|
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
-# Package Dependencies
 
 # Final Project Delivery Plan
 ## Fridays
