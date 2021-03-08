@@ -1,6 +1,6 @@
 # BeakersTorts's College survey
 
-# links
+# Links
 - Website link: http://beakerscollegepicker.tk
 - Easter egg: http://104.2.87.139:8080/easteregg/
 - Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
@@ -18,7 +18,7 @@ Michael Irribarren    | https://github.com/MichaelIribarren |
 The user will be asked a series of multiple choice questions all college related. Then after the user answer's all of the questions, the user will be given a select number of colleges based on the answers given. To make this College Survey accurate, the creators implemented an API that contains thousands of colleges for the algorithim to choose from that best suits the user.
 
 **IMPORTANT** : To easily navigate our site, please use the navbar at the top left of the home screen for guidence.
-
+<img width="1110" alt="Screen Shot 2021-03-06 at 5 21 06 PM" src="https://user-images.githubusercontent.com/54717937/110357731-7531ab00-7ff0-11eb-91f8-be50118b8556.png">
 # Project Details
 Section            | Details |
 -------------    | --------------- |
