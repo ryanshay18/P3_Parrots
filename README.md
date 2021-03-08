@@ -46,7 +46,7 @@ for row in conn.execute("select name, city, state, url, locale, carnegie_basic f
   print(row)
 ```
 ## API (Val)
-- This code shows the api being used in the project and the process of implementing the attributes from this api into the database code which is up above in the  Database code section. 
+- This code shows the api being used in the project and the process of implementing the attributes from this api into the database code.
 - link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api4.py
 ```import requests
 
