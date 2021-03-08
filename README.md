@@ -155,7 +155,7 @@ Rasberry Pi
 |----------|-------------|------|
 | Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123476|
 | Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123481 |
-| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
+| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice page. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
 |  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
 
 ### Ticket/Easter Egg (Info/Link)
@@ -172,7 +172,7 @@ Rasberry Pi
 https://youtu.be/LaLQzCo173c
 | Name   |   Goal   |  Accomplished |
 |----------|-------------|--------|
-| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for teh MySql database. link to code: https://rapidapi.com/sshanbond/api/university-college-list-and-rankings|
+| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for the MySql database. link to code: https://rapidapi.com/sshanbond/api/university-college-list-and-rankings|
 | Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api2.py#L1-L14|
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
@@ -189,10 +189,10 @@ Midterm is finished. So far what is done is:
 - Web page running off of a rasberry pi
 ## Night at the Museum
 ### goals:
-- Finish the backend for MC page
-- Finish the UI for MC page
-- Finish the ReadMe
-- Update the Rasberry Pi
+- [x] Finish the backend for MC page
+- [x] Finish the UI for MC page
+- [x] Finish the ReadMe
+- [x] Update the Rasberry Pi
 
 ## College Board
 To meet and exceed College Board requirements, this project will include a SQL Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
