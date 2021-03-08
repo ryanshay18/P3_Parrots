@@ -141,13 +141,21 @@ for page in range(68):
 Rasberry Pi
 ```
 # Tickets completed throughout the Project
+### Final Touch Up Tickets
+| Name    | Goal | Accomplished   |
+|-------- | ------ | ------- |
+| Billy      | Readme       | Re-modeled the whole readme base off Mr. Mortensons preferences. Used the website: https://www.markdownguide.org/extended-syntax/ to help me understand the syntax of markdown.   |
+| Valerie   | we now processing answers and showing schools.| Was able to print out what college is best for the user based off their quiz answers. Code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-56438102 |
+|  Lola |  Readme   | Goal was to insert images into the readme and still in the process. Should be finished by N@TM comes around.  |
+|  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
+
 ### Crossover Tickets
 | Name  |      Goal      |  Acomplished |
 |----------|-------------|------|
 | Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123476|
 | Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123481 |
 | Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
-|  Michael  |  Work on rasberry pi code   | Ras pi code  |
+|  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
 
 ### Ticket/Easter Egg (Info/Link)
 | Name  |      Goal      |  Acomplished |
