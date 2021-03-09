@@ -76,6 +76,7 @@ def next_question():
                          question_index=int(request.form['next_question']),
                          answers=request.form['answers'])
 
+
 @app.route('/submit', methods=['POST'])
 def submit():
     print(request.form['answers'])

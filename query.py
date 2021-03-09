@@ -9,16 +9,12 @@ crs = conn.cursor()
 
 # def construct_query(region, locale)
 
-for row in conn.execute("select name, city, state, url, locale, carnegie_basic from schools where city in ('Denver', 'Aurora') and carnegie_basic < 12"):
-  print(row)
+for row in conn.execute("select name, city, state, url, locale, carnegie_basic from schools where city in ('Denver', "
+                        "'Aurora') and carnegie_basic < 12"):
+    print(row)
 
 
 def where_locale(answer):
-    print(answer)
-    # Answer(1, "City (Population: over 250,000)"),
-    #  Answer(2, "Suburb (Population: 100,000 - 250,000)"),
-    #  Answer(3, "Town (cluster 10 - 35 miles away from urban area)"),
-    #  Answer(4, "Rural (5 - 25 miles away from urban area)")]),
     if answer == "1":
         return "locale >= 11 and locale <= 13"
     if answer == "2":
@@ -30,28 +26,26 @@ def where_locale(answer):
 
 
 def where_state(answer):
-   # Answer(1, "New England (CT, ME, MA, NH, RI, VT)"),
-   # Answer(2, "Mid East (DE, DC, MD, NJ, NY, PA)"),
-   # Answer(3, "Great Lakes (IL, IN, MI, OH, WI)"),
-   # Answer(4, "Plains (IA, KS, MN, MO, NE, ND, SD)"),
-   # Answer(5, "Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV)"),
-   # Answer(6, "Southwest (AZ, NM, OK, TX)"),
-   # Answer(7, "Rocky Mountains (CO, ID, MT, UT, WY)"),
-   # Answer(8, "Outlying Areas (AS, FM, GU, MH, MP, PR, PW, VI)")]),
     if answer == "1":
         return "state in ('CT', 'ME', 'MA', 'NH', 'RI', 'VT')"
+    if answer == "2":
+        return "state in ('DE', 'DC', 'MD', 'NJ', 'NY', 'PA')"
+    if answer == "3":
+        return "state in ('IL', 'IN', 'MI', 'OH', 'WI')"
     if answer == "4":
         return "state in ('IA', 'KS', 'MN', 'MO', 'NE', 'ND', 'SD')"
-    # TODO: finish other regions
+    if answer == "5":
+        return "state in ('AL', 'AR', 'FL', 'GA', 'KY', 'LA', 'MS', 'NC', 'SC', 'TN', 'VA', 'WV')"
+    if answer == "6":
+        return "state in ('AZ', 'NM', 'OK', 'TX')"
+    if answer == "7":
+        return "state in ('CO', 'ID', 'MT', 'UT', 'WY')"
+    if answer == "8":
+        return "state in ('AS', 'FM', 'GU', 'MH', 'MP', 'PR', 'PW', 'VI')"
     return ""
 
 
 def where_carnegie_basic(answer):
-    #  Answer(1, "Associates Degree"),
-    #  Answer(2, "Doctorate"),
-    #  Answer(3, "Master's Degree"),
-    #  Answer(4, "Bachelor's Degree"),
-    #  Answer(5, "2 Year / 4 Year Special Focus")]),
     if answer == "1":
         return "carnegie_basic >= 1 and carnegie_basic <= 9"
     if answer == "2":
@@ -66,13 +60,37 @@ def where_carnegie_basic(answer):
     return ""
 
 
+def where_ownership(answer):
+    if answer == "1":
+        return "ownership = 1"
+    if answer == "2":
+        return "ownership = 2 and ownership = 3"
+    if answer == "3":
+        return "ownership >= 1 and ownership <= 3"
+    return ""
+
+
+def where_carnegie_undergrad(answer):
+    if answer == "1":
+        return "carnegie_undergrad >= 1 and carnegie_undergrad <= 4"
+    if answer == "2":
+        return "carnegie_undergrad >= 5 and carnegie_undergrad >= 15"
+    if answer == "3":
+        return "carnegie_undergrad = 0"
+    if answer == "4":
+        return "carnegie_undergrad = -2"
+    return ""
+
+
 def query_colleges(answers):
     conn = sqlite3.connect('schools.db')
     answers_json = json.loads(answers)
     print(answers_json)
     where = where_locale(answers_json['0']) + " and " + \
             where_state(answers_json['1']) + " and " + \
-            where_carnegie_basic(answers_json['4'])
+            where_carnegie_basic(answers_json['4']) + " and " + \
+            where_ownership(answers_json['2']) + " and " + \
+            where_carnegie_undergrad(answers_json['5'])
     query = "select name, city, state, url, ownership from schools" \
             " where " + where
     print(query)
