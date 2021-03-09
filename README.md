@@ -1,6 +1,6 @@
 # BeakersTorts's College survey
 
-# links
+# Links
 - Website link: http://beakerscollegepicker.tk
 - Easter egg: http://104.2.87.139:8080/easteregg/
 - Scrum board link: https://github.com/valeriemiliteeva/BeakersTorts/projects/1
@@ -18,7 +18,7 @@ Michael Irribarren    | https://github.com/MichaelIribarren |
 The user will be asked a series of multiple choice questions all college related. Then after the user answer's all of the questions, the user will be given a select number of colleges based on the answers given. To make this College Survey accurate, the creators implemented an API that contains thousands of colleges for the algorithim to choose from that best suits the user.
 
 **IMPORTANT** : To easily navigate our site, please use the navbar at the top left of the home screen for guidence.
-
+<img width="1110" alt="Screen Shot 2021-03-06 at 5 21 06 PM" src="https://user-images.githubusercontent.com/54717937/110357731-7531ab00-7ff0-11eb-91f8-be50118b8556.png">
 # Project Details
 Section            | Details |
 -------------    | --------------- |
@@ -46,7 +46,7 @@ for row in conn.execute("select name, city, state, url, locale, carnegie_basic f
   print(row)
 ```
 ## API (Val)
-- This code shows the api being used in the project and the process of implementing the attributes from this api into the database code which is up above in the  Database code section. 
+- This code shows the api being used in the project and the process of implementing the attributes from this api into the database code.
 - link to full code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api4.py
 ```import requests
 
@@ -136,18 +136,27 @@ for page in range(68):
     answersInput.value = JSON.stringify(answersObj);
 ```
 ## Rasberry pi (Michael)
+- Link to website: http://beakerscollegepicker.tk
 - This project runs off of a rasberry pi
 ```
 Rasberry Pi
 ```
 # Tickets completed throughout the Project
+### Final Touch Up Tickets
+| Name    | Goal | Accomplished   |
+|-------- | ------ | ------- |
+| Billy      | Readme       | Re-modeled the whole readme base off Mr. Mortensons preferences. Used the website: https://www.markdownguide.org/extended-syntax/ to help me understand the syntax of markdown.   |
+| Valerie   | we now processing answers and showing schools.| Was able to print out what college is best for the user based off their quiz answers. Code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-56438102 |
+|  Lola |  Readme   | Goal was to insert images into the readme. Inserted the a picture of the home page into the readme. |
+|  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
+
 ### Crossover Tickets
 | Name  |      Goal      |  Acomplished |
 |----------|-------------|------|
 | Billy | Work on the database| Was able to complete the database by finding more attributes in the API like websites and adress. Was able to succsesfully print these attributes in terminal in a table with lables. This code was replaced on by the valeries new database and api code. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123476|
 | Valerie |  Keep working on the database  |   Switched from SQL Alchemy to SQL Lite because it fits better with what we are trying to accomplish with our project. Was able to find a better API and create a new database for the group. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123481 |
-| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice oage. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
-|  Michael  |  Work on rasberry pi code   | Ras pi code  |
+| Lola | Work on the MC page |  Created questions that related to Valerie's new Api code on the Multiple Choice page. Updated the page and was able to make the next button work better. https://github.com/valeriemiliteeva/BeakersTorts/projects/1#card-54123493 |
+|  Michael |  Rasberry Pi | Updated the code to the rasberry pi.   |
 
 ### Ticket/Easter Egg (Info/Link)
 | Name  |      Goal      |  Acomplished |
@@ -163,10 +172,34 @@ Rasberry Pi
 https://youtu.be/LaLQzCo173c
 | Name   |   Goal   |  Accomplished |
 |----------|-------------|--------|
-| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for teh MySql database. link to code: https://rapidapi.com/sshanbond/api/university-college-list-and-rankings|
+| Billy | Database work | Was able to start the base code of the MySQL database. Still a long ways to go to get the database to work. Made a create.py for the MySql database. link to code: https://rapidapi.com/sshanbond/api/university-college-list-and-rankings|
 | Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api2.py#L1-L14|
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
+# Pull code from Github and update packages
+## In console/terminal (every update: pull code and check package dependencies)...
+## Raspberry Pi Run Instructions
+    Deployment Process - 
+- 1. Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
+- 2 Find the IP address of specific raspberry pi, edit main.py file of project to reflect the IP address of raspberry pi. 
+- 3 Login to home router. Reserve an IP address for your raspberry pi on your home router through allocation. Setup port forwarding to your raspberry pi through service assignment, find public IP address of raspberry pi. 
+    Run Instructions from Terminal
+- 1 ssh pi@[IP](enterpassword)
+- 2 cd Tri1---HTML-portfolio/
+- 3 python3 main.py
+
+## Pull code from Github and update packages
+In console/terminal (every update: pull code and check package dependencies)
+pi@raspberrypi: ~ sudo apt update; sudo apt upgrade
+pi@raspberrypi: ~ cd ~/P2-BeakersTorts
+pi@raspberrypi: ~ /P2-BeakersTorts $ git pull
+pi@raspberrypi: ~ /P2-BeakersTorts $ source homesite/bin/activate
+
+In console/terminal with virtualnv activate (every time: check and update packages)
+(homesite) pi@raspberrypi: ~/P2-BeakersTorts $ sudo pip install -r requirements.txt
+
+In console/terminal (every time after intial setup: restard gunicorn)
+pi@raspberrypi: ~$ sudo systemctl restart homesite.service
 
 # Final Project Delivery Plan
 ## Fridays
@@ -180,13 +213,25 @@ Midterm is finished. So far what is done is:
 - Web page running off of a rasberry pi
 ## Night at the Museum
 ### goals:
-- Finish the backend for MC page
-- Finish the UI for MC page
-- Finish the ReadMe
-- Update the Rasberry Pi
+- [x] Finish the backend for MC page
+- [x] Finish the UI for MC page
+- [x] Finish the ReadMe
+- [x] Update the Rasberry Pi
 
 ## College Board
 To meet and exceed College Board requirements, this project will include a SQL Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
 
 College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
+
+## Raspberry Pi Run Instructions
+    Deployment Process - 
+- 1. Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
+- 2 Find the IP address of specific raspberry pi, edit main.py file of project to reflect the IP address of raspberry pi. 
+- 3 Login to home router. Reserve an IP address for your raspberry pi on your home router through allocation. Setup port forwarding to your raspberry pi through service assignment, find public IP address of raspberry pi. 
+    Run Instructions from Terminal
+- 1 ssh pi@[IP](enterpassword)
+- 2 cd Tri1---HTML-portfolio/
+- 3 python3 main.py
+
+
 
