@@ -177,29 +177,28 @@ https://youtu.be/LaLQzCo173c
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
 # Pull code from Github and update packages
-## In console/terminal (every update: pull code and check package dependencies)...
 ## Raspberry Pi Run Instructions
     Deployment Process - 
-- 1. Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
+- 1 Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
 - 2 Find the IP address of specific raspberry pi, edit main.py file of project to reflect the IP address of raspberry pi. 
 - 3 Login to home router. Reserve an IP address for your raspberry pi on your home router through allocation. Setup port forwarding to your raspberry pi through service assignment, find public IP address of raspberry pi. 
-    Run Instructions from Terminal
-- 1 ssh pi@[IP](enterpassword)
+**Run Instructions from Terminal**
+- 1 ssh pi@(IP)(enterpassword)
 - 2 cd Tri1---HTML-portfolio/
 - 3 python3 main.py
 
 ## Pull code from Github and update packages
-In console/terminal (every update: pull code and check package dependencies)
-pi@raspberrypi: ~ sudo apt update; sudo apt upgrade
-pi@raspberrypi: ~ cd ~/P2-BeakersTorts
-pi@raspberrypi: ~ /P2-BeakersTorts $ git pull
-pi@raspberrypi: ~ /P2-BeakersTorts $ source homesite/bin/activate
+**In console/terminal (every update: pull code and check package dependencies)**
+- ```pi@raspberrypi: ~ sudo apt update; sudo apt upgrade```
+- ```pi@raspberrypi: ~ cd ~/P2-BeakersTorts```
+- ```pi@raspberrypi: ~ /P2-BeakersTorts $ git pull```
+- ```pi@raspberrypi: ~ /P2-BeakersTorts $ source homesite/bin/activate```
 
 In console/terminal with virtualnv activate (every time: check and update packages)
-(homesite) pi@raspberrypi: ~/P2-BeakersTorts $ sudo pip install -r requirements.txt
+```(homesite) pi@raspberrypi: ~/P2-BeakersTorts $ sudo pip install -r requirements.txt```
 
 In console/terminal (every time after intial setup: restard gunicorn)
-pi@raspberrypi: ~$ sudo systemctl restart homesite.service
+```pi@raspberrypi: ~$ sudo systemctl restart homesite.service```
 
 # Final Project Delivery Plan
 ## Fridays
@@ -222,16 +221,3 @@ Midterm is finished. So far what is done is:
 To meet and exceed College Board requirements, this project will include a SQL Database,Web scraper, will be a deployed Web Site on Raspberry Pi server, and will be way more advanced than the websites created from trimester 1.
 
 College board requirements for project: https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf
-
-## Raspberry Pi Run Instructions
-    Deployment Process - 
-- 1. Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
-- 2 Find the IP address of specific raspberry pi, edit main.py file of project to reflect the IP address of raspberry pi. 
-- 3 Login to home router. Reserve an IP address for your raspberry pi on your home router through allocation. Setup port forwarding to your raspberry pi through service assignment, find public IP address of raspberry pi. 
-    Run Instructions from Terminal
-- 1 ssh pi@[IP](enterpassword)
-- 2 cd Tri1---HTML-portfolio/
-- 3 python3 main.py
-
-
-
