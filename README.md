@@ -176,8 +176,7 @@ https://youtu.be/LaLQzCo173c
 | Valerie|  Find an API |  Found an API that has mediocre attributes about the college. College attributes in the api: Location, website, name, mascot, school colors, adress, etc. Also Updated the home page with carousol. Added pictures to the home page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/api2.py#L1-L14|
 | Lola| Work on MC Page and Feedback Page | Was able to create the MC and Feedback page for the website. Also was able to come up with the questions for the feedback page and the MC page. Link to code: https://github.com/valeriemiliteeva/BeakersTorts/blob/main/templates/feedback.html#L1-L69 |
 | Michael | Run website off Virtual Box   |  Wasn't able to accomplish this with Mr. Mortensen's help, instead Mr. Mortensen gave him another week to run the website off the Rasberry Pi. Link to code: https://drive.google.com/file/d/1yYb9al2HrXVc32_izZAu969sTe87cghh/view?usp=sharing  |
-# Pull code from Github and update packages
-## Raspberry Pi Run Instructions
+# Raspberry Pi Run Instructions
     Deployment Process - 
 - 1 Obtain git location, login to GitHub on Pi browser, copy HTML address, run git clone with terminal, continue in the termianl and run web server on pi browser using local host
 - 2 Find the IP address of specific raspberry pi, edit main.py file of project to reflect the IP address of raspberry pi. 
@@ -195,10 +194,10 @@ https://youtu.be/LaLQzCo173c
 - ```pi@raspberrypi: ~ /P2-BeakersTorts $ source homesite/bin/activate```
 
 In console/terminal with virtualnv activate (every time: check and update packages)
-```(homesite) pi@raspberrypi: ~/P2-BeakersTorts $ sudo pip install -r requirements.txt```
+- ```(homesite) pi@raspberrypi: ~/P2-BeakersTorts $ sudo pip install -r requirements.txt```
 
 In console/terminal (every time after intial setup: restard gunicorn)
-```pi@raspberrypi: ~$ sudo systemctl restart homesite.service```
+- ```pi@raspberrypi: ~$ sudo systemctl restart homesite.service```
 
 # Final Project Delivery Plan
 ## Fridays
