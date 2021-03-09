@@ -64,7 +64,7 @@ def where_ownership(answer):
     if answer == "1":
         return "ownership = 1"
     if answer == "2":
-        return "ownership = 2 and ownership = 3"
+        return "(ownership = 2 or ownership = 3)"
     if answer == "3":
         return "ownership >= 1 and ownership <= 3"
     return ""
@@ -74,7 +74,7 @@ def where_carnegie_undergrad(answer):
     if answer == "1":
         return "carnegie_undergrad >= 1 and carnegie_undergrad <= 4"
     if answer == "2":
-        return "carnegie_undergrad >= 5 and carnegie_undergrad >= 15"
+        return "carnegie_undergrad >= 5 and carnegie_undergrad <= 15"
     if answer == "3":
         return "carnegie_undergrad = 0"
     if answer == "4":
