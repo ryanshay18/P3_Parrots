@@ -41,6 +41,8 @@ def where_state(answer):
     if answer == "7":
         return "state in ('CO', 'ID', 'MT', 'UT', 'WY')"
     if answer == "8":
+        return "state in ('AK', 'CA', 'HI', 'NV', 'OR', 'WA')"
+    if answer == "9":
         return "state in ('AS', 'FM', 'GU', 'MH', 'MP', 'PR', 'PW', 'VI')"
     return ""
 
@@ -57,6 +59,25 @@ def where_carnegie_basic(answer):
     if answer == "5":
         return "(carnegie_basic >= 10 and carnegie_basic <= 13) or" \
                " (carnegie_basic >= 24 and carnegie_basic <= 32)"
+    return ""
+
+
+def where_carnegie_basic2(answer):
+    if answer == "1":  # STEM
+        return "((carnegie_basic >= 4 and carnegie basic <= 11) or (carnegie_basic = 17) or (carnegie_basic >= 25 and " \
+               "carnegie_basic <= 28)) "
+    if answer == "2":  # LSA
+        return "((carnegie_basic >= 1 and carnegie_basic <= 3) or (carnegie basic >= 18 and carnegie_basic <= 22))"
+    if answer == "3":  # Art
+        return "(carnegie_basic = 12 or carnegie_basic = 30)"
+    if answer == "4":  # Research
+        return "(carnegie_basic = 15 or carnegie_basic = 16)"
+    if answer == "5":  # Law
+        return "carnegie_basic = 31"
+    if answer == "6":  # N/A
+        return "carnegie_basic = -2"
+    if answer == "7":  # Undeclared/Other
+        return "(carnegie_basic = 0 or carnegie_basic = 13 or carnegie_basic = 24 or carnegie_basic = 32)"
     return ""
 
 
