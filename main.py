@@ -36,9 +36,14 @@ def colleges():
     return render_template("colleges.html")
 
 
-@app.route('/billy')
-def about_billy():
-    return render_template("aboutbilly.html")
+@app.route('/ryan')
+def about_ryan():
+    return render_template("aboutryan.html")
+
+
+@app.route('/nick')
+def about_nick():
+    return render_template("aboutnick.html")
 
 
 @app.route('/lola')
@@ -82,7 +87,6 @@ def submit():
     print(request.form['answers'])
     colleges = query_colleges(request.form['answers'])
     return render_template("results.html", colleges=colleges)
-
 
 
 if __name__ == "__main__":
