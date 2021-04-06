@@ -1,10 +1,12 @@
 # import requests
+
 from flask import Flask, render_template, request
 
 from quiz import quiz_data
 
 from query import query_colleges
 
+from minilabs.nick.nick import nick_blueprint
 app = Flask(__name__)
 
 
