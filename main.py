@@ -1,7 +1,7 @@
 # import requests
 
 from flask import Flask, render_template, request
-
+from minilabs.lola.lola import lola_blueprint
 from quiz import quiz_data
 
 from query import query_colleges
@@ -9,6 +9,7 @@ from query import query_colleges
 from minilabs.nick.nick import nick_blueprint
 app = Flask(__name__)
 
+app.register_blueprint(lola_blueprint, url_prefix='/lolaminilab')
 
 @app.route('/')
 def home():
@@ -67,6 +68,9 @@ def about_valerie():
 def feedback():
     return render_template("feedback.html")
 
+@app.route('/math')
+def math():
+    return render_template("math.html")
 
 @app.route('/responses/')
 def responses():

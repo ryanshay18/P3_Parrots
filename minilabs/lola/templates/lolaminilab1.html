@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lola Mini Lab</title>
+</head>
+<body>
+{% extends "navbar.html" %}
+<h3>Lola's Mini Lab</h3>
+
+<h3>{{a}} times {{b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
+<h3>{{a}} plus {{b}} = {{math.sum}} & Number of digits is {{math.sum_digits}}</h3>
+<ul>
+    {% for lola in lolaminilab1 %}
+    <li><a href="{{ lola.media }}">{{ lolaminilab1.name }}</a></li></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
