@@ -1,12 +1,14 @@
 # import requests
-import flask
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request
 
 from quiz import quiz_data
 
 from query import query_colleges
 
+from minilabs.valerie.valerie import minilabs_valerie
+
 app = Flask(__name__)
+app.register_blueprint(minilabs_valerie)
 
 
 @app.route('/')
@@ -55,11 +57,6 @@ def about_lola():
 @app.route('/michael')
 def about_michael():
     return render_template("aboutmichael.html")
-
-
-@app.route('/valerie')
-def about_valerie():
-    return render_template()
 
 
 @app.route('/feedback')
