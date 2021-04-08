@@ -12,6 +12,5 @@ headers = {
 
 response = requests.request("GET", url, headers=headers)
 
-print(response.text)
+#print(response.text)
 list = response.json()
-z
