@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+
+{% extends "navbar.html" %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Lola Mini Lab</title>
 </head>
 <body>
-{% extends "navbar.html" %}
+
+{% block link1 %}
 <h3>Lola's Mini Lab</h3>
 
 <h3>{{a}} times {{b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
@@ -16,4 +20,7 @@
     {% endfor %}
 </ul>
 </body>
+
+{% endblock %}
 </html>
+

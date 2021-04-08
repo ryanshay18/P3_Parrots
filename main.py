@@ -6,9 +6,11 @@ from quiz import quiz_data
 from query import query_colleges
 
 from minilabs.valerie.valerie import minilabs_valerie
+from minilabs.lola.lola import minilabs_lola
 
 app = Flask(__name__)
 app.register_blueprint(minilabs_valerie)
+app.register_blueprint(minilabs_lola)
 
 
 @app.route('/')

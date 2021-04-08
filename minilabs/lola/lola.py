@@ -2,9 +2,12 @@ from flask import Blueprint, render_template
 from flask import request
 from minilabs.lola.lolaminilab1 import Math
 
-lola_blueprint = Blueprint("lola_blueprint", __name__, static_folder="static", template_folder="templates")
+minilabs_lola = Blueprint("minilabs_lola", __name__,
+                          url_prefix="/lola",
+                          template_folder="templates",
+                          static_folder='static', static_url_path='assets')
 
 
-@lola_blueprint.route("/lolaminilab", methods=["GET", "POST"])
+@minilabs_lola.route("/minilab", methods=["GET", "POST"])
 def lola():
-    return render_template("lolaminilab1.html", Math=Math)
+    return render_template("lola/lolaminilab1.html", Math=Math)
