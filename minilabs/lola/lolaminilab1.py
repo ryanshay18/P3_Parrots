@@ -49,10 +49,10 @@ class Math:
     @property
     def product_digits(self):
         return self._productdigits
-# Driver program to test above
-a = 10
-b = 2
-Math = Math(a,b)
-print(f"{a} times {b} = {Math.product} & Number of digits is {Math.product_digits}")
-print(f"{a} plus {b} = {Math.sum} & Number of digits is {Math.sum_digits}")
+    def driver_program(self):
+        a = 10
+        b = 2
+        Math = Math(a,b)
+        print(f"{a} times {b} = {Math.product} & Number of digits is {Math.product_digits}")
+        print(f"{a} plus {b} = {Math.sum} & Number of digits is {Math.sum_digits}")
 
