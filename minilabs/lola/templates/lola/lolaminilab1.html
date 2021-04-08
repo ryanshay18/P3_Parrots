@@ -10,6 +10,7 @@
 <body>
 {% block link1 %}
 <h3>Lolas Mini Lab</h3>
+<h2> Reflection/WOW: My mini lab has a class called "Math" that displays four outputs: The sum, product, number of integers in the sum, and number of integers in the product for values a and b. I am currently in the process of allowing the user to choose these inputs on the website, but as of now all my outputs are seen in the running terminal of intelliJ. My WOW is the user input I have developed on the screen, which incorporates JINJA templates and an organized submit button. </h2>
 <form method='POST'>
     <div class="form-group">
         <label for="a">enter your first number</label>
@@ -22,6 +23,7 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 
 </form>
+<h3>{{driver_program}}</h3>
 <h3> ({{a}}) times ({{b}}) = ({{product}}) & Number of digits is ({{ProductDigits}})</h3>
 <h3>({{a}}) plus ({{b}}) = ({{sum}}) & Number of digits is ({{SumDigits}})</h3>
 <ul>

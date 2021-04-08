@@ -12,7 +12,7 @@ minilabs_lola = Blueprint('minilabs_lola', __name__,
 def lola():
     if request.form == 'POST':
         print(request.method)
-        return render_template("lola/lolaminilab1.html")
+        return render_template("lola/lolaminilab1.html", Math=Math)
     return render_template("lola/lolaminilab1.html")
 
 
