@@ -1,28 +1,26 @@
-import random
 
-class startupStack:
+class Pigeon:
+    def __init__(self, n):
+        self._n = n
+        self.primes = [2]
+        a = 2
 
-    def __init__(self, industry="tech"):
-        self.industry = industry
+        while a < n:
+            counter = 0
 
-    def setIndustry(self, input):
-        self.industry = input
+            for i in self.primes:
+                if a % i == 0:
+                    counter += 1
 
-    def getIndustry(self):
-        return self.industry
-        # might need to add underscore after self
+            if counter == 0:
+                self.primes.append(a)
+            else:
+                counter = 0
 
-    def getIdea(self):
-        stack = ['Better Grocery Bulk Dispensing in Grocery Stores', 'Smart Toliet for Biometric Data', 'A vertical social network for floraphiles', 'Infrastructure to launch resaurants at lower cost', 'An Api for Multiple Real estate listing services']
-        n = random.randint(0, 3)
-        return stack[n]
+            a = a + 1
 
+    def get_n(self):
+        return self._n
 
-ideaStack = startupStack()
-
-ideaStack.setIndustry('Tech')
-
-print("The industry chosen is: " + ideaStack.getIndustry())
-
-print(ideaStack.getIdea())
-
+    def get_primes(self):
+        return self.primes
