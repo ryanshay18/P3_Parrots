@@ -31,9 +31,9 @@ def quiz():
                            answers='{}')
 
 
-@app.route('/about')
+@app.route('/minilabs')
 def about():
-    return render_template("about.html")
+    return render_template("minilabs.html")
 
 
 @app.route('/colleges')

@@ -3,10 +3,33 @@
 {% extends "navbar.html" %}
 
 {% block link1 %}
+
+<h1> Minilab 1 Results:</h1>
 <h3>Prime numbers from 2 to {{pigeon.get_n()}}</h3>
 
 {% for i in pigeon.get_primes() %}
-{{i}},
+    {{i}},
 {% endfor %}
+
+<style>
+    h1 {
+      text-align: left;
+      padding-left: 20px;
+      color: black;
+      font-size: 40px;
+      font-family: times new roman;
+    }
+
+    h3 {
+      text-align: left;
+      padding-left: 20px;
+      color: black;
+      font-size: 30px;
+      font-family: times new roman;
+    }
+
+
+
+</style>
 
 {% endblock %}

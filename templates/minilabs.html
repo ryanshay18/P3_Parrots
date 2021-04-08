@@ -1,0 +1,47 @@
+{% extends "navbar.html" %}
+
+{% block link1 %}
+<h1 style="text-align: left; padding-left: 15px; font-family: times-new-roman; color:blue; font-size 40px">Parrots MiniLabs </h1>
+<h2 style="text-align: left; padding-left: 15px; font-family: times-new-roman; color:black; font-size 35px">Click on any name to see the result of their minilabs!</h2>
+
+<div class="dropdown" style="padding: 15;">
+    <div id="myDropdown" class="dropdown-content">
+        <a href="/ryan" style="text-align: center; padding:15px; font-size:30px"> Ryan</a>
+        <a href="/nickminilab1" style="text-align: center; padding:15px; font-size:30px"> Nick</a>
+        <a href="/lola/minilab" style="text-align: center; padding:15px; font-size:30px"> Lola</a>
+        <a href="/valerie/minilab" style="text-align: center; padding:15px; font-size:30px"> Valerie</a>
+        <a href="/michael" style="text-align: center; padding:15px; font-size:30px"> Michael</a>
+
+
+    </div>
+</div>
+
+<style>
+        body{
+background-image: url('cool-background.jpg');
+background-repeat: no-repeat;
+animation: bg-animation 10s infinite;
+
+}
+
+@-webkit-keyframes bg-animation {
+
+}
+
+@keyframes bg-animation {
+0% {
+background-color: #e6e6fa;
+}
+25% {
+background-color: #e6e6fa;
+}
+75% {
+background-color: #e6e6fa;
+}
+100% {
+background-color: #e6e6fa;
+}
+
+</style>
+
+{% endblock %}
