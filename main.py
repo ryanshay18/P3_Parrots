@@ -7,12 +7,12 @@ from query import query_colleges
 
 from minilabs.valerie.valerie import minilabs_valerie
 from minilabs.lola.lola import minilabs_lola
-from minilabs.ryan.ryan import ryan_blueprint
+from minilabs.ryan.ryan import minilabs_ryan
 
 app = Flask(__name__)
 app.register_blueprint(minilabs_valerie)
 app.register_blueprint(minilabs_lola)
-app.register_blueprint(ryan_blueprint)
+app.register_blueprint(minilabs_ryan)
 
 
 @app.route('/')
@@ -41,26 +41,6 @@ def about():
 @app.route('/colleges')
 def colleges():
     return render_template("colleges.html")
-
-
-@app.route('/ryan')
-def about_ryan():
-    return render_template("aboutryan.html")
-
-
-@app.route('/nick')
-def about_nick():
-    return render_template("aboutnick.html")
-
-
-@app.route('/lola')
-def about_lola():
-    return render_template("aboutlola.html")
-
-
-@app.route('/michael')
-def about_michael():
-    return render_template("aboutmichael.html")
 
 
 @app.route('/feedback')

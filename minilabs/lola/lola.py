@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 from flask import request
-from minilabs.lola.lolaminilab1 import Math, driver_program
+from minilabs.lola.lolaminilab1 import Math
 
 minilabs_lola = Blueprint('minilabs_lola', __name__,
                           url_prefix="/lola",
