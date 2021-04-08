@@ -12,7 +12,6 @@ from minilabs.ryan.ryan import ryan_blueprint
 app = Flask(__name__)
 app.register_blueprint(minilabs_valerie)
 app.register_blueprint(minilabs_lola)
-
 app.register_blueprint(ryan_blueprint)
 
 
