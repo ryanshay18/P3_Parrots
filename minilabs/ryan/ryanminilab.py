@@ -16,8 +16,8 @@ class startupStack:
         # might need to add underscore after self
 
     def getIdea(self):
-        stack = ['idea1', 'idea2']
-        n = random.randint(0, 1)
+        stack = ['Better Grocery Bulk Dispensing in Grocery Stores', 'Smart Toliet for Biometric Data', 'A vertical social network for floraphiles', 'Infrastructure to launch resaurants at lower cost', 'An Api for Multiple Real estate listing services']
+        n = random.randint(0, 3)
         return stack[n]
 
 

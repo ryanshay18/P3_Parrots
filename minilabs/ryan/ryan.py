@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-from minilabs.ryan.ryanminilab1 import startupStack
+from minilabs.ryan.ryanminilab import startupStack
 
 minilabs_ryan = Blueprint("minilabs_ryan", __name__,
                           url_prefix="/ryan",
@@ -10,4 +10,4 @@ minilabs_ryan = Blueprint("minilabs_ryan", __name__,
 
 @minilabs_ryan.route("/minilab")
 def ryan():
-    return render_template("ryan/ryanminilab1.html", ryanLab = startupStack())
+    return render_template("ryan/ryanminilab1.html", ideaStack = startupStack())
