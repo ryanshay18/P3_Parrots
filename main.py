@@ -7,10 +7,13 @@ from query import query_colleges
 
 from minilabs.valerie.valerie import minilabs_valerie
 from minilabs.lola.lola import minilabs_lola
+from minilabs.ryan.ryan import ryan_blueprint
 
 app = Flask(__name__)
 app.register_blueprint(minilabs_valerie)
 app.register_blueprint(minilabs_lola)
+
+app.register_blueprint(ryan_blueprint)
 
 
 @app.route('/')
@@ -73,13 +76,13 @@ def responses():
 
 @app.route('/next', methods=['POST'])
 def next_question():
-  print(request.form['answer'])
-  print(request.form['answers'])
-  print(request.form['next_question'])
-  return render_template("quiz.html",
-                         data=quiz_data(),
-                         question_index=int(request.form['next_question']),
-                         answers=request.form['answers'])
+    print(request.form['answer'])
+    print(request.form['answers'])
+    print(request.form['next_question'])
+    return render_template("quiz.html",
+                           data=quiz_data(),
+                           question_index=int(request.form['next_question']),
+                           answers=request.form['answers'])
 
 
 @app.route('/submit', methods=['POST'])
