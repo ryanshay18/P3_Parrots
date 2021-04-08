@@ -10,4 +10,4 @@ minilabs_nick = Blueprint('minilabs_nick', __name__,
 
 @minilabs_nick.route("/minilab")
 def nick():
-    return render_template("nick/nickminilab1.html", flamingo=Flamingo(20))
+    return render_template("/nick/nickminilab1.html", flamingo=Flamingo(20))
