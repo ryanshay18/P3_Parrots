@@ -9,12 +9,13 @@ from minilabs.valerie.valerie import minilabs_valerie
 from minilabs.lola.lola import minilabs_lola
 from minilabs.ryan.ryan import minilabs_ryan
 from minilabs.michael.michael import minilabs_michael
+from minilabs.nick.nick import minilabs_nick
 
 app = Flask(__name__)
 app.register_blueprint(minilabs_valerie)
 app.register_blueprint(minilabs_lola)
 app.register_blueprint(minilabs_ryan)
-# app.register_blueprint(minilabs_nick)
+app.register_blueprint(minilabs_nick)
 app.register_blueprint(minilabs_michael)
 
 
