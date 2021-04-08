@@ -8,19 +8,28 @@
     <title>Lola Mini Lab</title>
 </head>
 <body>
-
 {% block link1 %}
-<h3>Lola's Mini Lab</h3>
+<h3>Lolas Mini Lab</h3>
+<form method='POST'>
+    <div class="form-group">
+        <label for="a">enter your first number</label>
+        <input class="form-control" id="a" name="a" aria-describedby="emailHelp" placeholder="Enter an integer">
+    </div>
+    <div class="form-group">
+        <label for="b">enter your second number</label>
+        <input class="form-control" id="b" name="b" placeholder="Enter an integer">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 
-<h3>{{a}} times {{b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
-<h3>{{a}} plus {{b}} = {{math.sum}} & Number of digits is {{math.sum_digits}}</h3>
+</form>
+<h3> ({{a}}) times ({{b}}) = ({{product}}) & Number of digits is ({{ProductDigits}})</h3>
+<h3>({{a}}) plus ({{b}}) = ({{sum}}) & Number of digits is ({{SumDigits}})</h3>
 <ul>
     {% for lola in lolaminilab1 %}
-    <li><a href="{{ lola.media }}">{{ lolaminilab1.name }}</a></li></li>
+    <li><a href="{{ lola.lolaminilab1 }}">{{ lolaminilab1.name }}</a></li></li>
     {% endfor %}
 </ul>
-</body>
-
 {% endblock %}
+</body>
 </html>
 
