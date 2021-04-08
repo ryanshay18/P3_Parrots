@@ -1,10 +1,13 @@
 from flask import Blueprint, render_template
 
-from minilabs.michael.michaelminilab1 import startupStack
+from minilabs.michael.michaelminilab1 import Pigeon
 
-michael_blueprint = Blueprint("ryan_blueprint", __name__, static_folder="static", template_folder="templates")
+minilabs_michael = Blueprint('minilabs_michael', __name__,
+                              url_prefix="/michael",
+                              template_folder='templates',
+                              static_folder='static', static_url_path='assets')
 
 
-@michael_blueprint.route("/minilab")
+@minilabs_michael.route("/minilab")
 def michael():
-    return render_template("michaelminilab1.html", michaelLab = startupStack())
+    return render_template("michael/michaelminilab1.html", pigeon=Pigeon(20))
