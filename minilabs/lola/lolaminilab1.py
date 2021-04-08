@@ -3,6 +3,8 @@ from flask import request
 class Math:
     # init method or constructor
     def __init__(self, a, b):
+        self._a=a
+        self._b=b
         self._product = (a*b)
         self._sum = (a+b)
         self._productdigits = self.ProductDigits()
@@ -11,7 +13,7 @@ class Math:
         count = 0
         # absolute value of the
         # product of two numbers
-        p = abs(a * b)
+        p = abs(self._a * self._b)
         # if product is 0
         if (p == 0) :
             return 1
@@ -26,7 +28,7 @@ class Math:
         count2 = 0
         # absolute value of the
         # sum of two numbers
-        p = abs(a + b)
+        p = abs(self._a + self._b)
         # if sum is 0
         if (p == 0) :
             return 1
@@ -49,11 +51,19 @@ class Math:
     @property
     def product_digits(self):
         return self._productdigits
-    # Driver program to test above
-a = 74
-b = 200
-math = Math(a,b)
-print(f"{a} times {b} = {math.product} & Number of digits is {math.product_digits}")
-print(f"{a} plus {b} = {math.sum} & Number of digits is {math.sum_digits}")
+    @property
+    def a(self):
+        return self._a
+    @property
+    def b(self):
+        return self._b
+
+   # Driver program to test above
+if __name__ == "__main__":
+    a = 74
+    b = 200
+    math = Math(a,b)
+    print(f"{a} times {b} = {math.product} & Number of digits is {math.product_digits}")
+    print(f"{a} plus {b} = {math.sum} & Number of digits is {math.sum_digits}")
 
 

@@ -10,10 +10,11 @@ minilabs_lola = Blueprint('minilabs_lola', __name__,
 
 @minilabs_lola.route("/minilab", methods=["GET", "POST"])
 def lola():
-    if request.form == 'POST':
-        print(request.method)
-        return render_template("lola/lolaminilab1.html", Math=Math)
-    return render_template("lola/lolaminilab1.html")
+    if request.form:
+        a = int(request.form.get("a"))
+        b = int(request.form.get("b"))
+        return render_template("lola/lolaminilab1.html", math=Math(a,b))
+    return render_template("lola/lolaminilab1.html",math=Math(0,0))
 
 
 
