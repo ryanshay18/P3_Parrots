@@ -1,4 +1,4 @@
-class Pigeon:
+class Flamingo:
     def __init__(self, n):
         self._n = n
         self.primes = [2]

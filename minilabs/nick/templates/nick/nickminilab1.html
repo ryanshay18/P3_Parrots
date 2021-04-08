@@ -5,9 +5,13 @@
 {% block link1 %}
 
 <h1> Nick's Minilab </h1>
-<h2>fdsfsd</h2>
-<h3>{{ideaStack.getIdea()}}</h3>
+<h3>Prime numbers from 2 to {{flamingo.get_n()}}</h3>
 
+<div>
+    {% for i in flamingo.get_primes() %}
+    {{i}},
+    {% endfor %}
+</div>
 <h2 style="text-align: center; font-family: times; color:blue; font-size 25px"> 1. I added a blueprint in the python file
     that says "nick.py found in minilabs/nick and cataloged the project to the main.py. I then made a route that referred the blueprint to the html template and
     showed the final results on the mini lab </h2>

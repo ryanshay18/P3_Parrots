@@ -15,6 +15,7 @@ for row in conn.execute("select name, city, state, url, locale, carnegie_basic f
     print(row)
 """
 
+
 def where_locale(answer):
     if answer == "1":
         return "locale >= 11 and locale <= 13"
