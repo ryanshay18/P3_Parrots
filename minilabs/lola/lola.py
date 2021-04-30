@@ -17,11 +17,11 @@ def lola():
         return render_template("lola/lolaminilab1.html", math=Math(a,b))
     return render_template("lola/lolaminilab1.html",math=Math(0,0))
 
-@minilabs_lola.route("/minilab" , methods=['GET', 'POST'])
+@minilabs_lola.route("/minilab", methods=['GET', 'POST'])
 def lola2():
     g = 0
     list = ""
-    if request.method == 'POST':
+    if request.form:
         value = request.form['list']
         k = bubblesorting
         g = k.g_original(value)
