@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template
 from flask import request
 from minilabs.lola.lolaminilab1 import Math
+from minilabs.lola.lolaminilab2 import BubbleSort
 
 minilabs_lola = Blueprint('minilabs_lola', __name__,
                           url_prefix="/lola",
@@ -15,6 +16,9 @@ def lola():
         b = int(request.form.get("b"))
         return render_template("lola/lolaminilab1.html", math=Math(a,b))
     return render_template("lola/lolaminilab1.html",math=Math(0,0))
-
+@minilabs_lola.route('/minilab', methods=['GET', 'POST'])
+def alphabetize():
+    sort = request.form.getlist("sort")
+    return render_template("bubble.html", bubbles=BubbleSort(sort))
 
 
