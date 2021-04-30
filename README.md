@@ -33,7 +33,7 @@
 | ------------- | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |  0| Brainstorm project Ideas, repo & slack setup | Created Project Board | Researched Databases for project | Brainstormed Ideas to incorporate| Brainstormed Ideas to incorporate | Created Repo and Scrum Team set-up |
 |  1| Form project plan and assign roles, set up deliverable for crossover grading | Created Project Plan Documents | Created Blueprints| Raspberry Pi setup | Routes setup |  Flowchart and Blueprints |
-|  2| Start on everyone's role, have tangibles for end of week, project should run with baseline code | add here | add here | add here | add here | add here |
+|  2| Start on everyone's role, have tangibles for end of week, project should run with baseline code | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ``` Frontend Design + Homepage ``` | ``` Api Work + Algorithms ``` |
 |  3| add here| add here | add here | add here | add here | add here |
 |  4| add here | add here | add here | add here | add here | add here |
 # [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true)
@@ -61,6 +61,10 @@ Team Contributes will be found [HERE](https://github.com/ryanshay18/P3Parrots/gr
 
 # Map of project to AP CSP requirements
 [Computer Science Principlse Course Cpnten description pages 19, 20, 21](https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-and-exam-description.pdf?course=ap-computer-science-principles)
+
+# API Link
+https://rapidapi.com/IVALLC/api/entertainment-data-hub
+
 
 | Unit | Percentage | Project Usage |
 | ------------- | ----------- | ----------- |

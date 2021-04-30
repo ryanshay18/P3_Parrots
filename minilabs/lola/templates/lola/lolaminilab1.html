@@ -9,28 +9,25 @@
 </head>
 <body>
 {% block link1 %}
-<h3>Lolas Mini Lab</h3>
+<h3>Lolas Mini Lab 1</h3>
 <h3>Overall predicted score for ketchup: 4/5 (Binary point 4 is not met)</h3>
-<h2> Reflection/WOW: My mini lab has a class called "Math" that displays four outputs: The sum, product, number of integers in the sum, and number of integers in the product for values a and b. In line 55 of my code, I create an object from a class for one of the binary points. I am currently in the process of allowing the user to choose these inputs on the website, but as of now all my outputs are seen in the running terminal of intelliJ. My WOW is the user input I have developed on the screen, which incorporates JINJA templates and an organized submit button. </h2>
-<form method='POST'>
-    <div class="form-group">
+<h2> Reflection/WOW: My mini lab has a class called "Math" that displays four outputs: The sum, product, number of integers in the sum, and number of integers in the product for values a and b. </h2>
+<form id="mathform" action="/lola/minilab" method='POST'>
+
+
         <label for="a">enter your first number</label>
-        <input class="form-control" id="a" name="a" aria-describedby="emailHelp" placeholder="Enter an integer">
-    </div>
-    <div class="form-group">
+        <input id="a" name="a" placeholder="Enter an integer">
+
         <label for="b">enter your second number</label>
-        <input class="form-control" id="b" name="b" placeholder="Enter an integer">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+        <input id="b" name="b" placeholder="Enter an integer">
+    <button>Go!</button>
 
 </form>
-<h3>{{driver_program}}</h3>
-<h3> ({{a}}) times ({{b}}) = ({{product}}) & Number of digits is ({{ProductDigits}})</h3>
-<h3>({{a}}) plus ({{b}}) = ({{sum}}) & Number of digits is ({{SumDigits}})</h3>
+
+<h3> {{math.a}} times {{math.b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
+<h3>{{math.a}} plus {{math.b}} = {{math.sum}} & Number of digits is {{math.sum_digits}}</h3>
 <ul>
-    {% for lola in lolaminilab1 %}
-    <li><a href="{{ lola.lolaminilab1 }}">{{ lolaminilab1.name }}</a></li></li>
-    {% endfor %}
+
 </ul>
 {% endblock %}
 </body>
