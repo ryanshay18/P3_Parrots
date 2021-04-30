@@ -38,11 +38,11 @@ if __name__ == "__main__":
     # api2 code implemented into database table
     url = "https://universities-and-colleges.p.rapidapi.com/universities"
 
-    querystring = {"page": "1", "includeUniversityDetails": "true", "countryCode": "US", "limit": "50", "state": "true", "address": "true", "website": "true", "zip": "true"}
+    querystring = {"page": "1"}
 
     headers = {
         'x-RapidAPI-Key': "7060fafea1mshc1031ccdb460c56p1e6e83jsnc95eba373c88",
-        'x-RapidAPI-Host': "universities-and-colleges.p.rapidapi.com"
+        'x-RapidAPI-Host': "ivaee-internet-video-archive-entertainment-v1.p.rapidapi.com"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -50,6 +50,7 @@ if __name__ == "__main__":
     print(response.text)
     list = response.json()
 
+"""
     try:
         for item in list:
             #          print(item["name"], item["countryCode"])
@@ -60,6 +61,7 @@ if __name__ == "__main__":
 
     except:
         print("Records exist")
+        
 
     print("Table: Users")
     list = Users.query.all()
@@ -72,3 +74,4 @@ if __name__ == "__main__":
         print("zip code:", row.zip)
         print("website:", row.website)
 
+"""
