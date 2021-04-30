@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+{% extends "navbar.html" %}
+
+{% block link1 %}
+
+<h3>This is what we did:</h3>
+
+
+<div>
+{% for pass in passes %}
+    <div>
+    {{pass}}
+    </div>
+{% endfor %}
+  Total number of passes: {{no_of_passes}}
+</div>
+
+<style>
+    h1 {
+      text-align: left;
+      padding-left: 14px;
+      color: black;
+      font-size: 40px;
+      font-family: times new roman;
+    }
+
+    h2 {
+      text-align: left;
+      padding-top: 8px;
+      padding-left: 14px;
+      color: black;
+      font-size: 30px;
+      font-family: times new roman;
+    }
+
+    h3 {
+      text-align: left;
+      padding-left: 14px;
+      color: black;
+      font-size: 25px;
+      font-family: times new roman;
+    }
+
+    div {
+      text-align: left;
+      padding-left: 14px;
+      color: black;
+      font-size: 18px;
+      font-family: times new roman;
+    }
+
+    p {
+      text-align: left;
+      padding-left: 14px;
+      padding-right: 15px;
+      color: black;
+      font-size: 20px;
+      font-family: times new roman;
+    }
+
+
+
+</style>
+
+{% endblock %}
