@@ -1,16 +1,16 @@
 from flask import request
 
 
-class bubblesorting:
+class lolabubblesort:
     def __init__(self):
         self._lst=[]
-    def g_original(g_test):
-        g_var1 =  g_test
-        return g_var1.split(',')
+    def x_original(x_test):
+        x_var1 =  x_test
+        return x_var1.split(',')
     def bubbleSort(value_1):
         n = len(value_1)-3
-        value_g = value_1
-        arr = value_g.split(',')
+        value_x = value_1
+        arr = value_x.split(',')
         value = arr
         # Traverse through all array elements
         for i in range(n):

@@ -9,23 +9,23 @@
 </head>
 <body>
 {% block link1 %}
-<h3>Lolas Mini Lab 1</h3>
+<h1 style="text-align:center; color:white">Lola's Minilab 1</h1>
 <h3>Overall predicted score for ketchup: 4/5 (Binary point 4 is not met)</h3>
 <h2> Reflection/WOW: My mini lab has a class called "Math" that displays four outputs: The sum, product, number of integers in the sum, and number of integers in the product for values a and b. </h2>
 <form id="mathform" action="/lola/minilab" method='POST'>
 
 
-        <label for="a">enter your first number</label>
+        <label for="a">Enter your first number: </label>
         <input id="a" name="a" placeholder="Enter an integer">
 
-        <label for="b">enter your second number</label>
+        <label for="b">Enter your second number: </label>
         <input id="b" name="b" placeholder="Enter an integer">
     <button>Go!</button>
 
 </form>
 
-<h3> {{math.a}} times {{math.b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
-<h3>{{math.a}} plus {{math.b}} = {{math.sum}} & Number of digits is {{math.sum_digits}}</h3>
+<h3 style="text-align:center"> {{math.a}} times {{math.b}} = {{math.product}} & Number of digits is {{math.product_digits}}</h3>
+<h3 style="text-align:center">{{math.a}} plus {{math.b}} = {{math.sum}} & Number of digits is {{math.sum_digits}}</h3>
 
 <head>
     <meta charset="UTF-8">
@@ -37,8 +37,8 @@
     }
 </style>
     <form id="fibForm" action="/lola/minilab" method="POST" >
-        <h2 style="color:white; font-size:25px">Insert a list of 4 numbers below</h2>
-        <label for="list" class="pt-5" style="color:white; font-size:25px">Enter a List:</label>
+        <h2 style="text-align:center; color:white; font-size:25px">Please insert a list of 4 numbers below</h2>
+        <label for="list" class="pt-5" style="text-align:center; color:white; font-size:25px">Enter a List:</label>
         <input id="list" name="list" placeholder="ex: 3,7,5,8" type="text" style="height:40px" ;required="required">
         <button class="button" style="height:35px; width: 35px"><span>Go</span></button>
     </form>
@@ -53,7 +53,7 @@
         </thead>
         <tbody>
         <tr style="word-break:break-all;">
-            <td style="color:white">{{g}}</td>
+            <td style="color:white">{{x}}</td>
             <td style="color:white">{{list}}</td>
         </tr>
         </tbody>
