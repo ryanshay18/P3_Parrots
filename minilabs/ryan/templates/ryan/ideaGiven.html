@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends "navbar.html" %}
+
+{% block link1 %}
+
+<h1> Ryan's Minilab </h1>
+<h2>Industry Chosen: Tech... Refresh Page to generate a new idea... Idea shown Below:</h2>
+
+{% for key,value in form.items() %}
+<h2> {{key}}</h2>
+<p> {{value}}</p>
+{% endfor %}
+
+{% endblock %}
