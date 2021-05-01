@@ -11,3 +11,7 @@ minilabs_nick = Blueprint('minilabs_nick', __name__,
 @minilabs_nick.route("/minilab")
 def nick():
     return render_template("/nick/nickminilab1.html", flamingo=Flamingo(20))
+
+@minilabs_nick.route("/nick_bubblesort")
+def nickbubble():
+    return render_template("/nick/nick_bubblesort.html", flamingo=Flamingo(20))
