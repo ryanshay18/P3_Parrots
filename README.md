@@ -28,14 +28,13 @@
  -  A music website that utilizes Spotify's API and effective algorithims to suggest artists and songs; based upon your previous choices in music 
  -  Here is the API we are planning on using, if all goes according to plan: https://developer.spotify.com/documentation/web-api/
 
-# Project Plan
+# Project Plan (May 10- May 31)
 | Week | GOALS | Lola | Val | Michael | Nick | Ryan |
 | ------------- | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|  0| Brainstorm project Ideas, repo & slack setup | Created Project Board | Researched Databases for project | Brainstormed Ideas to incorporate| Brainstormed Ideas to incorporate | Created Repo and Scrum Team set-up |
-|  1| Form project plan and assign roles, set up deliverable for crossover grading | Created Project Plan Documents | Created Blueprints| Raspberry Pi setup | Routes setup |  Flowchart and Blueprints |
-|  2| Start on everyone's role, have tangibles for end of week, project should run with baseline code | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ``` Frontend Design + Homepage ``` | ``` Api Work + Algorithms ``` |
-|  3| add here| add here | add here | add here | add here | add here |
-|  4| add here | add here | add here | add here | add here | add here |
+|  1| Complete API work by Friday | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests | Complete 2 practice tests | Complete 2 practice tests, present to Mr. M for extra credit |
+|  2| Database work completed by Friday | Create new questions for movie database | x | x | x |  x |
+|  3| Crossover with share team | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ``` Frontend Design + Homepage ``` | ``` Api Work + Algorithms ``` |
+
 # [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true)
  - The Scrum Board is integral to efficent and productive team managment. 
  - We have "stories" which are like tasks that are moved through categories such as: back log / in progress / done
