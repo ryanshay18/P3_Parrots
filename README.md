@@ -32,7 +32,7 @@
 | Week | GOALS | Lola | Val | Michael | Nick | Ryan |
 | ------------- | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |  1| Complete API work by Friday | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests | Complete 2 practice tests | Complete 2 practice tests, present to Mr. M for extra credit |
-|  2| Database work completed by Friday | Create new questions for movie database | x | x | x |  x |
+|  2| Database work completed by Friday | Create new questions for movie database | Database link | Work with nick to create website subsection | Work with mike to create website subsection | Database link with Val |
 |  3| Crossover with share team | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ``` Frontend Design + Homepage ``` | ``` Api Work + Algorithms ``` |
 
 # [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true)
