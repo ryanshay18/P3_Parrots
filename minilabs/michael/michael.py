@@ -11,3 +11,7 @@ minilabs_michael = Blueprint('minilabs_michael', __name__,
 @minilabs_michael.route("/minilab")
 def michael():
     return render_template("michael/michaelminilab1.html", pigeon=Pigeon(20))
+
+@minilabs_michael.route("/bubble")
+def michaelbubble():
+    return render_template("/michael/bubble.html", pigeon=Pigeon(20))
