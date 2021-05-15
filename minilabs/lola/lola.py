@@ -21,7 +21,7 @@ def lola():
 def lola2():
     x = 0
     list = ""
-    if request.form:
+    if request.form == 'POST':
         value = request.form['list']
         y = lolabubblesort
         x = y.x_original(value)

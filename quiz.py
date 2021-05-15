@@ -58,7 +58,7 @@ questions = [
               Answer(3, "Game"),
               Answer(4, "Certain Episode"),
               Answer(5, "Certain Season")]),
-    Question(6, "Original release date?",
+    Question(6, "Which do you prefer for the original release date?",
              [Answer(1, "After 2010"),
               Answer(2, "2000-2010"),
               Answer(3, "1990-2000"),
