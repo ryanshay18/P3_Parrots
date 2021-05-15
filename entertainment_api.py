@@ -1,14 +1,20 @@
 import requests
 
+"""
+Entertainment API
+ Implementation - 
+    Can query entertainment things
+"""
+
 url = "https://ivaee-internet-video-archive-entertainment-v1.p.rapidapi.com/entertainment/search/"
 
-querystring = {"ProgramTypes":"Movie",
-               "OriginatingNetworks":"Netflix",
-               "Tags":"movie",
-               "AvailabilityCountries":"US",
-               "ReleaseCountries":"US",
-               "PersonNames":"Anne Hathaway",
-            "Take":"1"}
+querystring = {"ProgramTypes": "Movie",
+               "OriginatingNetworks": "Netflix",
+               "Tags": "movie",
+               "AvailabilityCountries": "US",
+               "ReleaseCountries": "US",
+               "PersonNames": "Anne Hathaway",
+               "Take": "1"}
 
 headers = {
     'content-type': "application/json",
