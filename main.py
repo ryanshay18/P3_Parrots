@@ -1,5 +1,6 @@
 # import requests
-from flask import Flask, render_template, request
+from django.shortcuts import redirect
+from flask import Flask, render_template, request, url_for
 
 from quiz import quiz_data
 
@@ -59,6 +60,19 @@ def aboutus():
 def responses():
     return render_template("responses.html")
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return redirect(url_for("home"))
+    else:
+        return render_template('login.html')
+
+@app.route('/signup', methods=['GET','POST'])
+def signup():
+    if request.method == 'POST':
+        return redirect(url_for("home"))
+    else:
+        return render_template('signup.html')
 
 @app.route('/next', methods=['POST'])
 def next_question():
