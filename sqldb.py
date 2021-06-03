@@ -1,27 +1,32 @@
 import sqlite3
 import json
 
-conn = sqlite3.connect('schools.db')
+conn = sqlite3.connect('movies.db')
 
 crs = conn.cursor()
 
 # school.name,school.city,school.state,school.zip,school.carnegie_size_setting,school.school_url,school.carnegie_basic,school.locale,school.region_id,school.ownership,school.carnegie_undergrad
-crs.execute('''create table schools (
-                 name text,
-                 city text,
-                 state text,
-                 url text,
-                 region_id integer,
-                 locale integer,
-                 carnegie_size_setting integer,
-                 carnegie_basic integer,
-                 carnegie_undergrad integer,
-                 ownership integer)''')
+crs.execute('''create table movies (
+                 minimum_iva_rating text,
+                 program_types text,
+                 genres text,
+                 providers text,
+                 budget text,
+                 status text,
+                 season_id text,
+                 people_id text,
+                 release_types text
+                 originating_networks text,
+                 year_range_start text,
+                 year_range_end text,
+                 certifications text,
+                 availability countries text,
+                 title text,
+                 includes text)''')
 
-
-def insert_school(school):
-  locale = str(school['school.locale']) if school['school.locale'] else 'null'
-  carnegie_size_setting = str(school['school.carnegie_size_setting']) if school['school.carnegie_size_setting'] else 'null'
+def insert_movies(movies):
+  minimum_iva_rating = str(movies['movies.minimum_iva_rating]) if movies['movies.minimum_iva_rating']')
+  program_types = str(movies['movies.program_types']) if movies['movies.program_types']')'
   carnegie_basic = str(school['school.carnegie_basic']) if school['school.carnegie_basic'] else 'null'
   carnegie_undergrad = str(school['school.carnegie_undergrad']) if school['school.carnegie_undergrad'] else 'null'
   ownership = str(school['school.ownership']) if school['school.ownership'] else 'null'
@@ -45,7 +50,7 @@ def process_file(file_name):
   with open(file_name) as f:
     data = json.load(f)
   for school in data['results']:
-    insert_school(school)
+    insert_movies(movies)
 
 
 for file in range(68):

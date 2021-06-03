@@ -35,7 +35,7 @@ def create_database(connection, query):
         print("Error: '{err}'")
 
 
-create_database_query = "Create Database college"
+create_database_query = "Create Database movies"
 create_database(connection, create_database_query)
 
 
@@ -68,7 +68,3 @@ def execute_query(connection, query):
         print("Query successful")
     except Error as err:
         print("Error: '{err}'")
-
-
-
-

@@ -22,6 +22,7 @@ session = Session(bind=engine)
 
 
 class Users(db.Model):
+    """
     user_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
     country = db.Column(db.String(255), unique=False, nullable=False)
@@ -29,6 +30,7 @@ class Users(db.Model):
     address = db.Column(db.String(255), unique=False, nullable=False)
     zip = db.Column(db.String(255), unique=False, nullable=False)
     website = db.Column(db.String(255), unique=False, nullable=False)
+    """
 
 
 if __name__ == "__main__":

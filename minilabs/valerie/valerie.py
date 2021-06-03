@@ -13,6 +13,7 @@ minilabs_valerie = Blueprint('minilabs_valerie', __name__,
 def index():
     return render_template("valerie/valerieminilab1.html", pigeon=Pigeon(200))
 
+
 @minilabs_valerie.route('/minilab/post', methods=['POST'])
 def post():
 
