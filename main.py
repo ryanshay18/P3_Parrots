@@ -41,6 +41,9 @@ def quiz():
 def about():
     return render_template("minilabs.html")
 
+@app.route('/howitsmade')
+def howitsmade():
+    return render_template("howitsmade.html")
 
 @app.route('/colleges')
 def colleges():
