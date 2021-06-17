@@ -1,4 +1,4 @@
-from query import query_colleges
+from query import query_movies
 
 class Answer:
     def __init__(self, answer_index, answer_text):
@@ -44,7 +44,7 @@ questions = [
              [Answer(1, "Buy the movie"),
               Answer(2, "Have a subscription"),
               Answer(3, "Free rent")]),
-    Question(4, "What rating do you want the movie to have?",
+    Question(4, "What (iVa) rating do you want the movie to have?",
              [Answer(1, "90+"),
               Answer(2, "80-90"),
               Answer(3, "70-80"),
@@ -72,8 +72,8 @@ def quiz_data():
 
 def handle_response(answers):
     print(answers)
-    return query_colleges()
-    return "Hello my little Pinguino!"
+    return query_movies()
+    return "Works!"
 
 # questions =
 #

@@ -1,6 +1,8 @@
 import sqlite3
 import json
 
+import movies
+
 conn = sqlite3.connect('movies.db')
 
 crs = conn.cursor()
@@ -25,25 +27,27 @@ crs.execute('''create table movies (
                  includes text)''')
 
 def insert_movies(movies):
-  minimum_iva_rating = str(movies['movies.minimum_iva_rating]) if movies['movies.minimum_iva_rating']')
-  program_types = str(movies['movies.program_types']) if movies['movies.program_types']')'
-  carnegie_basic = str(school['school.carnegie_basic']) if school['school.carnegie_basic'] else 'null'
-  carnegie_undergrad = str(school['school.carnegie_undergrad']) if school['school.carnegie_undergrad'] else 'null'
-  ownership = str(school['school.ownership']) if school['school.ownership'] else 'null'
-  url = '"' + school['school.school_url'] + '"' if school['school.school_url'] else 'null'
-  query = 'insert into schools values(' + \
-          '"' + school['school.name'] + '", ' + \
-          '"' + school['school.city'] + '", ' + \
-          '"' + school['school.state'] + '", ' + \
-          url + ', ' + \
-          str(school['school.region_id']) + ', ' + \
-          locale + ', ' + \
-          carnegie_size_setting + ', ' + \
-          carnegie_basic + ', ' + \
-          carnegie_undergrad + ', ' + \
-          ownership + ")"
-  print(query)
-  crs.execute(query)
+  minimum_iva_rating = str(movies['movies.minimum_iva_rating']) if movies['movies.minimum_iva_rating'] else 'null'
+  program_types = str(movies['movies.program_types']) if movies['movies.program_types'] else 'null'
+  genres = str(movies['genres']) if movies['genres'] else 'null'
+  providers = str(movies['movies.providers']) if movies['movies.budget'] else 'null'
+  budget = str(movies['movies.budget']) if movies['movies.budget'] else 'null'
+  status = str(movies['movies.status']) if movies['movies.status'] else 'null'
+  season_id = '"' + movies['movies.season_id'] + '"' if movies['school.season_id'] else 'null'
+  people_id = str(movies['movies.people_id']) if movies['movies.people_id'] else 'null'
+  release_types = str(movies['movies.release_types']) if movies['movies.release_types'] else 'null'
+  originating_networks = str(movies['movies.originating_networks']) if movies['movies.originating_networks'] else 'null'
+  year_range_start = str(movies['movies.year_range_start']) if movies['movies.year_range_start'] else 'null'
+  certifications = str(movies['movies.certifications']) if movies['movies.certifications'] else 'null'
+  availability_countries = str(movies['movies.availability countries']) if movies['movies.availability countries'] else 'null'
+  title = str(movies['movies.title']) if movies['movies.title'] else 'null'
+
+query = 'insert into movies values(' + \
+          '"' + movies['title'] + '", ' + \
+          '"' + movies['movies.providers'] + '", ' + \
+          '"' + movies['movies.genres'] + ")"
+print(query)
+crs.execute(query)
 
 
 def process_file(file_name):

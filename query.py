@@ -3,7 +3,7 @@ import json
 
 # https://collegescorecard.ed.gov/data/documentation/
 
-conn = sqlite3.connect('schools.db')
+conn = sqlite3.connect('movies.db')
 
 crs = conn.cursor()
 
@@ -105,8 +105,8 @@ def where_carnegie_undergrad(answer):
     return ""
 
 
-def query_colleges(answers):
-    conn = sqlite3.connect('schools.db')
+def query_movies(answers):
+    conn = sqlite3.connect('movies.db')
     answers_json = json.loads(answers)
     print(answers_json)
     where = where_locale(answers_json['0']) + " and " + \
