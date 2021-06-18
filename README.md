@@ -25,7 +25,8 @@ https://drive.google.com/file/d/1N_HcRLte_2jb-DfVuYcRFIIi6Yegzkd2/view?usp=shari
 # How It's Made Section
  - In the NAV BAR on the top left of the screen, please click "How It's Made" to learn about the details behind our project
  - Here is what you will find embedded in the website: https://docs.google.com/document/d/1DBjzyTaGJhTi7YqW3e9asLseoErg5awi92WLcfcfcIk/edit?usp=sharing
-
+ - Below, you can read our "About the Project", "Tactics and Approaches", and "Crossover info" section to understand how Parrots music was made
+ 
 # About The Project
  -  A movie website that utilizes a web API and effective algorithims to suggest movies and streamers; based upon your previous choices in the quiz we will form 
 
