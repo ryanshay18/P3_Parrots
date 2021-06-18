@@ -22,8 +22,17 @@
 
 
 # About The Project
- -  A music website that utilizes Spotify's API and effective algorithims to suggest artists and songs; based upon your previous choices in music 
- -  Here is the API we are planning on using, if all goes according to plan: https://developer.spotify.com/documentation/web-api/
+ -  A movie website that utilizes a web API and effective algorithims to suggest movies and streamers; based upon your previous choices in the quiz we will form 
+
+# Tactics & Approaches 
+ - We will create a question set that repopulates itself, instead of having to make a new page for each question on the quiz
+ - We will create a login/signup page to create a more personalized experience for the user
+ - We will assign roles that highlight each of our team-members strengths (see project plan for more details on our roles)
+
+# Crossover info
+ - We communicated with the Pladypodes to create a matching algorithm idea, both repolutating a question set for each question.
+ - Our tactic is to use a quiz, and then recieve a result for "Which movie" after querying the database 
+ - In order to give results, our teams both used tables to display the final data
 
 # Project Plan (May 31 - June 18)
 | Week | GOALS | Lola | Val | Michael | Nick | Ryan |
@@ -77,4 +86,3 @@ https://rapidapi.com/IVALLC/api/entertainment-data-hub
 # Minilabs Link
 [Minilabs/CodingExcercises](https://github.com/ryanshay18/P3-Parrots/tree/main/codingexercises)
 
-hey hey hey
