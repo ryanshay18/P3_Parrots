@@ -28,7 +28,7 @@
  -  A music website that utilizes Spotify's API and effective algorithims to suggest artists and songs; based upon your previous choices in music 
  -  Here is the API we are planning on using, if all goes according to plan: https://developer.spotify.com/documentation/web-api/
 
-# Project Plan (May 10- May 31)
+# Project Plan (May 31 - June 18)
 | Week | GOALS | Lola | Val | Michael | Nick | Ryan |
 | ------------- | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |  1| Complete API work by Friday | Complete 1 practice test, present to Mr. M for extra credit, rewrite quiz questions for the new movies algo, and do create task for college board | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests | Complete 2 practice tests | Complete 2 practice tests, present to Mr. M for extra credit |
