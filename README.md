@@ -2,9 +2,6 @@
 <h1 align="center">Period 3 Parrots</h1>
 <h1 align="center">http://parrotgames.tk/</h1>
 
-# Minilabs Link
-[Minilabs/CodingExcercises](https://github.com/ryanshay18/P3-Parrots/tree/main/codingexercises)
-
 
 <!-- TABLE OF CONTENTS -->
 # Table Of Contents
@@ -76,5 +73,9 @@ https://rapidapi.com/IVALLC/api/entertainment-data-hub
 #Tickets
 <!-- # Previous Assignments -->
 <!-- Can add previous stuff you did here -->
+
+# Minilabs Link
+[Minilabs/CodingExcercises](https://github.com/ryanshay18/P3-Parrots/tree/main/codingexercises)
+
 
 hey hey hey
