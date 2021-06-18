@@ -3,30 +3,22 @@
 {% block link1 %}
 
 <div class="content">
-  <h3>Thank you for the responses!</h3>
+  <h3>Thank you for taking the time to respond!</h3>
   <p>
-  Here's the list of colleges you might consider applying
+  Here's the list of movies you might consider to watch
   </p>
 <!--  {{ colleges }}-->
   <table>
     <tr>
-      <th>Name</th>
-      <th>State</th>
-      <th>City</th>
-      <th>Type</th>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Rating</th>
     </tr>
-    {% for college in colleges %}
+    {% for movie in movies %}
     <tr>
-      <td><a href="//{{ college[3] }}">{{ college[0] }}</a></td>
-      <td>{{ college[2] }}</td>
-      <td>{{ college[1] }}</td>
-      <td>
-        {% if college[4] == 1 %}
-          Public
-        {% else %}
-          Private
-        {% endif %}
-      </td>
+      <td>{{ movie['Source']['Title'] }}</td>
+      <td>{{ movie['Source']['Year'] }}</td>
+      <td>{{ movie['Source']['IvaRating'] }}</td>
     </tr>
     {% endfor %}
   </table>
