@@ -30,7 +30,7 @@
 | ------------- | ------------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 |  1| Complete API work by Friday | Complete 1 practice test, present to Mr. M for extra credit, rewrite quiz questions for the new movies algo, and do create task for college board | Complete 2 practice tests, present to Mr. M for extra credit | Complete 2 practice tests | Complete 2 practice tests | Complete 2 practice tests, present to Mr. M for extra credit |
 |  2| Database work completed by Friday and Create Task finalization for CB | Create new questions for movie database, fix -1 point on create task graded by Adi | Database link | Work with nick to create website subsection | Work with mike to create website subsection | Database link with Val |
-|  3| Crossover with share team | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ``` Frontend Design + Homepage ``` | ``` Api Work + Algorithms ``` |
+|  3| Finish project!!!! | ``` Quiz Component ```| ```Implementing Spotifys Api + building Algorithms ``` | ``` Homepage + Frontend Design ``` | ```  ``` | ``` Api Work + Algorithms ``` |
 
 # [Scrum Board](https://github.com/MaxVukovich/P2Lions/projects/1?fullscreen=true)
  - The Scrum Board is integral to efficent and productive team managment. 
