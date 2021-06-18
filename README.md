@@ -77,5 +77,4 @@ https://rapidapi.com/IVALLC/api/entertainment-data-hub
 # Minilabs Link
 [Minilabs/CodingExcercises](https://github.com/ryanshay18/P3-Parrots/tree/main/codingexercises)
 
-
 hey hey hey
